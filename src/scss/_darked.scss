@@ -1,0 +1,35 @@
+.darked-block {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__info {
+    max-width: 700px;
+  }
+
+  &__title {
+    color: #F5FBF6;
+    @include adaptiv-value(font-size, 45, 25, 1);
+    line-height: 110%;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: #F5FBF6;
+    @include adaptiv-value(font-size, 16, 14, 1);
+    max-width: 284px;
+  }
+}
+
+.darked-form {
+  @include adaptiv-value(padding-top, 64, 30, 1);
+  @include adaptiv-value(padding-bottom, 64, 30, 1);
+  @include adaptiv-value(padding-right, 10, 5, 1);
+  @include adaptiv-value(padding-left, 10, 5, 1);
+
+  background-image: url("../img/darked-bg.jpg");
+
+  &__title {
+    @include adaptiv-value(margin-bottom, 30, 15, 1)
+  }
+}

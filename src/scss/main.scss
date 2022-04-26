@@ -1,10 +1,11 @@
 // базовые подключения
+@import "vendor";
 @import "vars";
 @import "mixins";
 @import "fonts";
-@import "vendor";
 @import "settings";
-
+@import "form";
+@import "darked";
 
 
 // подключения компонентов страницы
