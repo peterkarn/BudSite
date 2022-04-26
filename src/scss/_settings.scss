@@ -23,6 +23,7 @@ html {
   font-size: 16px;
   font-family: "Muller", Arial, Helvetica, sans-serif;
   font-weight: 400;
+  background-color: var(--primary);
 }
 
 img {
@@ -54,6 +55,7 @@ a {
 // btns
 .btn {
   border-radius: 15px;
+  padding: 10px 15px;
 }
 
 .btn-primary {

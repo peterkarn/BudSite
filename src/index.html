@@ -7,39 +7,43 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      <section class="darked-block darked-form">
-        <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-lg-5 col-sm-12">
-              <div class="darked-block__info">
-                <h1 class="darked-block__title darked-form__title">
-                  Локальний ремонт у вашому місті
-                </h1>
-                <p class="darked-block__text">
-                  Отримайте безкоштовну консультацію від наших спеціалістів
-                </p>
+      <div class="container">
+        <section class="darked-block darked-form">
+          <div class="container">
+
+            <div class="row align-items-center justify-content-around">
+              <div class="col-lg-6 col-sm-12">
+                <div class="darked-block__info">
+                  <h1 class="darked-block__title darked-form__title">
+                    Локальний ремонт у вашому місті
+                  </h1>
+                  <p class="darked-block__text">
+                    Отримайте безкоштовну консультацію від наших спеціалістів
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-5 col-sm-12">
+                <form action="#" class="form">
+                  <label class="form__label">
+                    <span>Ваше ім’я*</span>
+                    <input type="text" class="form__input input-reset" placeholder=" Ім'я">
+                  </label>
+                  <label class="form__label">
+                    <span>Ваш телефон*</span>
+                    <input type="tel" class="form__input input-reset" placeholder="+380 (__) ___ __ __">
+                  </label>
+                  <label class="form__label">
+                    <span>Електрона адреса</span>
+                    <input type="email" class="form__input input-reset" placeholder=" Email">
+                  </label>
+                  <button class="btn form__btn btn-primary align-self-md-start">Замовити консультацію</button>
+                </form>
               </div>
             </div>
-            <div class="col-lg-5 col-sm-12">
-              <form action="#" class="form">
-                <label class="form__label">
-                  <span>Ваше ім’я*</span>
-                  <input type="text" class="form__input input-reset"" placeholder=" Ім'я">
-                </label>
-                <label class="form__label">
-                  <span>Ваш телефон*</span>
-                  <input type="tel" class="form__input input-reset" placeholder="Телефон">
-                </label>
-                <label class="form__label">
-                  <span>Електрона адреса</span>
-                  <input type="email" class="form__input input-reset"" placeholder=" Email">
-                </label>
-                <button class="btn form__btn btn-primary w-sm-100">Замовити консультацію</button>
-              </form>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
     </main>
 
     @include('partials/footer.html')

@@ -8974,6 +8974,7 @@ progress {
 :root {
   --bs-dark: #353836;
   --bs-blue: #91C7BE;
+  --primary: #E7F4F0;
 }
 
 /* stylelint-disable */
@@ -9042,6 +9043,7 @@ html {
   font-size: 16px;
   font-family: "Muller", Arial, Helvetica, sans-serif;
   font-weight: 400;
+  background-color: var(--primary);
 }
 
 img {
@@ -9073,6 +9075,7 @@ a {
 
 .btn {
   border-radius: 15px;
+  padding: 10px 15px;
 }
 
 .btn-primary {
@@ -9174,12 +9177,18 @@ a {
 }
 @media (max-width: 1240px) {
   .form span {
+    margin-bottom: calc(10px + 5 * ((100vw - 320px) / 920));
+  }
+}
+@media (max-width: 1240px) {
+  .form span {
     font-size: calc(14px + 2 * ((100vw - 320px) / 920));
   }
 }
 .form input {
   border-radius: 15px;
   padding: 12px 17px;
+  color: #BEBEBE;
 }
 .form input::-webkit-input-placeholder {
   color: #BEBEBE;
@@ -9207,18 +9216,21 @@ a {
   width: 100%;
   margin-bottom: 25px;
 }
-.form__btn {
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+@media (max-width: 1240px) {
+  .form__label {
+    margin-bottom: calc(20px + 5 * ((100vw - 320px) / 920));
+  }
+}
+
+.header {
+  margin-bottom: 60px;
 }
 
 .darked-block {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-}
-.darked-block__info {
-  max-width: 700px;
+  border-radius: 15px;
 }
 .darked-block__title {
   color: #F5FBF6;
@@ -9231,10 +9243,12 @@ a {
     font-size: calc(25px + 20 * ((100vw - 320px) / 920));
   }
 }
+.darked-block__info {
+  max-width: 500px;
+}
 .darked-block__text {
   color: #F5FBF6;
   font-size: 16px;
-  max-width: 284px;
 }
 @media (max-width: 1240px) {
   .darked-block__text {
@@ -9245,8 +9259,8 @@ a {
 .darked-form {
   padding-top: 64px;
   padding-bottom: 64px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
   background-image: url("../img/darked-bg.jpg");
 }
 @media (max-width: 1240px) {
@@ -9261,12 +9275,12 @@ a {
 }
 @media (max-width: 1240px) {
   .darked-form {
-    padding-right: calc(5px + 5 * ((100vw - 320px) / 920));
+    padding-right: calc(10px + 20 * ((100vw - 320px) / 920));
   }
 }
 @media (max-width: 1240px) {
   .darked-form {
-    padding-left: calc(5px + 5 * ((100vw - 320px) / 920));
+    padding-left: calc(10px + 20 * ((100vw - 320px) / 920));
   }
 }
 .darked-form__title {
@@ -9276,60 +9290,5 @@ a {
   .darked-form__title {
     margin-bottom: calc(15px + 15 * ((100vw - 320px) / 920));
   }
-}
-
-.header {
-  background-color: black;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 20px 0;
-}
-.header__logo {
-  display: inline-block;
-  width: 150px;
-  height: 25px;
-  background-color: grey;
-  margin-right: 15px;
-}
-.header__socials {
-  margin-right: 15px;
-}
-.header__menu {
-  margin-right: 15px;
-}
-
-.menu__list li {
-  margin-bottom: 5px;
-}
-.menu__list li:not(:last-child) {
-  margin-right: 25px;
-}
-@media (max-width: 1240px) {
-  .menu__list li:not(:last-child) {
-    margin-right: calc(0px + 25 * ((100vw - 320px) / 920));
-  }
-}
-.menu__link {
-  color: #fff;
-}
-
-.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.socials__placeholder {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: seagreen;
-}
-.socials__placeholder:not(:last-child) {
-  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */

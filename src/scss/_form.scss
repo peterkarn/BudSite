@@ -5,13 +5,14 @@
   & span {
     font-weight: 600;
     color: #F5FBF6;
-    margin-bottom: 15px;
-    @include adaptiv-value(font-size, 16, 14, 1)
+    @include adaptiv-value(margin-bottom, 15, 10, 1);
+    @include adaptiv-value(font-size, 16, 14, 1);
   }
 
   & input {
     border-radius: 15px;
     padding: 12px 17px;
+    color: #BEBEBE;
 
     &::placeholder {
       color: #BEBEBE;
@@ -22,10 +23,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 25px;
-  }
-
-  &__btn {
-    align-self: flex-start;
+    @include adaptiv-value(margin-bottom, 25, 20, 1);
   }
 }
