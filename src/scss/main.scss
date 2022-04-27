@@ -6,7 +6,9 @@
 @import "settings";
 @import "form";
 @import "darked";
+@import "index";
 
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/faq";
