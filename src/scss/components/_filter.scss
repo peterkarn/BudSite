@@ -1,0 +1,29 @@
+.filter {
+  outline: 3px solid red;
+
+  &__btns {
+    display: flex;
+    @include adaptiv-value(margin-bottom, 30, 15, 1)
+  }
+}
+
+.filter__btns {
+  margin-bottom: 50px;
+}
+
+.filter__content {
+  display: flex;
+}
+
+.filter__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid red;
+}
+
+.hide {
+  display: none;
+}

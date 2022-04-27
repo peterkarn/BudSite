@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="uk" class="page">
 
 @include('partials/head.html')
 
@@ -42,44 +42,51 @@
             </div>
           </div>
         </section>
+        <section class="categories">
+          <h1 class="section-title">
+            Категорії ремонтів
+          </h1>
+          <div class="filter">
+            <div class="filter__btns">
+              <button class="btn filter__btn" data-filter="dirty">Dirty</button>
+              <button class="btn filter__btn" data-filter="clean">Clean</button>
+            </div>
+            <div class="filter__categories">
+              <button class="filter__category" data-category="stelya">
+                Stelya
+              </button>
+              <button class="filter__category" data-category="demontage">
+                Demontage
+              </button>
+              <button class="filter__category" data-category="else">
+                Else
+              </button>
+              <button class="filter__category" data-category="roof">
+                Roof
+              </button>
+            </div>
+            <div class="filter__content">
+              <div class="filter__item dirty demontage" data-filter-result-type="dirty"
+                data-filter-resultcategory="demontage">
+                Item-Dirt-Demontage
+              </div>
+              <div class="filter__item dirty else" data-filter-result-type="dirty" data-filter-resultcategory="else">
+                Item-Dirt-Else
+              </div>
+              <div class="filter__item clean roof" data-filter-result-type="clean" data-filter-resultcategory="roof">
+                Item-Clean-Roof
+              </div>
+              <div class="filter__item clean stelya" data-filter-result-type="clean"
+                data-filter-resultcategory="stelya">
+                Item-Clean-Stelya
+              </div>
+
+            </div>
+          </div>
+        </section>
 
 
-        <div class="filter">
-          <div class="filter__btns">
-            <button class="btn" data-filter="dirty">Dirty</button>
-            <button class="btn" data-filter="clean">Clean</button>
-          </div>
-          <div class="filter__categories">
-            <button class="filter__category" data-category="stelya">
-              Stelya
-            </button>
-            <button class="filter__category" data-category="demontage">
-              Demontage
-            </button>
-            <button class="filter__category" data-category="else">
-              Else
-            </button>
-            <button class="filter__category" data-category="roof">
-              Roof
-            </button>
-          </div>
-          <div class="filter__content">
-            <div class="filter__item dirty demontage" data-filter-result-type="dirty"
-              data-filter-resultcategory="demontage">
-              Item-Dirt-Demontage
-            </div>
-            <div class="filter__item dirty else" data-filter-result-type="dirty" data-filter-resultcategory="else">
-              Item-Dirt-Else
-            </div>
-            <div class="filter__item clean roof" data-filter-result-type="clean" data-filter-resultcategory="roof">
-              Item-Clean-Roof
-            </div>
-            <div class="filter__item clean stelya" data-filter-result-type="clean" data-filter-resultcategory="stelya">
-              Item-Clean-Stelya
-            </div>
 
-          </div>
-        </div>
 
       </div>
 
