@@ -6858,6 +6858,44 @@ var inputs = document.querySelectorAll("input[type='tel']");
 var im = new Inputmask("+380 (99) 999 99 99");
 im.mask(inputs); // import Dropdown from "../../node_modules/bootstrap/js/dist/dropdown";
 // import Carousel from "../../node_modules/bootstrap/js/dist/carousel";
+// const filterBtns = document.querySelector(".filter__btns");
+// const filterItem = document.querySelectorAll(".filter__item");
+// document.querySelector(".filter__btns").addEventListener("click", (event) => {
+//   if (event.target.tagName !== "BUTTON") return false;
+//   let filterClass = event.target.dataset("filter");
+//   console.log(filterClass);
+// });
+
+var filterItem = document.querySelectorAll(".filter__item");
+var filterBtns = document.querySelector(".filter__btns");
+var filterCategories = document.querySelector(".filter__categories");
+filterBtns.addEventListener("click", function (event) {
+  if (event.target.tagName !== "BUTTON") return false;
+  var filterClass = event.target.dataset.filter;
+  console.log(filterClass);
+  filterItem.forEach(function (e) {
+    if (!e.classList.contains(filterClass)) {
+      e.classList.add("hide");
+    } else {
+      e.classList.remove("hide");
+    }
+  });
+});
+filterCategories.addEventListener("click", function (event) {
+  if (event.target.tagName !== "BUTTON") {
+    return false;
+  }
+
+  var filterCategory = event.target.dataset.category;
+  console.log(filterCategory);
+  filterItem.forEach(function (element) {
+    if (!element.classList.contains(filterCategory)) {
+      element.classList.add("hide");
+    } else {
+      element.classList.remove("hide");
+    }
+  });
+});
 })();
 
 /******/ })()
