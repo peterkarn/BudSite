@@ -57,6 +57,12 @@
     }
   }
 
+  .pseduo-track {
+    top: -15px;
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+
   &__item:not(:last-child) {
     margin-right: 30px;
 

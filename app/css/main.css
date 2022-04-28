@@ -4301,6 +4301,13 @@ section {
   flex: 0 0 420px;
 }
 
+.works-section .pseduo-track {
+  top: -15px;
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
 .works-section__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -4470,11 +4477,7 @@ section {
   position: relative;
   background: #CCDEDB;
   border-radius: 12px;
-  top: -15px;
   z-index: -10;
-  -webkit-transform: translateX(15px);
-  -ms-transform: translateX(15px);
-  transform: translateX(15px);
 }
 
 .outer-wrapper::-webkit-scrollbar {
@@ -4595,10 +4598,12 @@ section {
 
 .page-table table {
   width: 100%;
+  max-width: 100%;
+  min-width: 860px;
 }
 
 .page-table thead {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #A3C1BC;
 }
 
 .page-table th {
@@ -4607,36 +4612,58 @@ section {
   padding-bottom: 15px;
 }
 
+.page-table td:nth-child(even) {
+  padding-right: 30px;
+}
+
+.page-table .w-40 {
+  width: 40%;
+}
+
+.page-table .w-10 {
+  width: 10%;
+  white-space: nowrap;
+}
+
 .page-table__column {
   width: 50%;
 }
 
 .page-table__item {
+  position: relative;
   overflow: hidden;
 }
 
 .page-table__item span {
+  display: inline-block;
+  padding-right: 5px;
+  position: relative;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .page-table__item::after {
-  background: red;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  display: inline;
-  white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: clip;
-  text-overflow: clip;
   content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  border-bottom: 2px dotted #ccc;
 }
 
 .page-table__price {
   font-weight: bold;
   color: #6C968F;
   white-space: nowrap;
+  text-align: center;
+}
+
+.page-table__firstrow {
+  height: 35px;
+  vertical-align: bottom;
+}
+
+.page-table .pseduo-track {
+  top: -15px;
 }
 
 @media (min-width: 576px) {
@@ -7917,6 +7944,12 @@ section {
 
   .works-section {
     padding-left: calc((100% - 960px) / 2);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-table .pseduo-track {
+    display: none;
   }
 }
 
