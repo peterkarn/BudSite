@@ -5,6 +5,7 @@ const del = require("del");
 const browserSync = require("browser-sync").create();
 const sass = require("sass");
 const gulpSass = require("gulp-sass");
+const gcmq = require("gulp-group-css-media-queries");
 const svgSprite = require("gulp-svg-sprite");
 const svgmin = require("gulp-svgmin");
 const cheerio = require("gulp-cheerio");
@@ -87,33 +88,36 @@ const svgSprites = () => {
 
 // scss styles
 const styles = () => {
-  return src(paths.srcScss, { sourcemaps: !isProd })
-    .pipe(
-      plumber(
-        notify.onError({
-          title: "SCSS",
-          message: "Error: <%= error.message %>",
+  return (
+    src(paths.srcScss, { sourcemaps: !isProd })
+      .pipe(
+        plumber(
+          notify.onError({
+            title: "SCSS",
+            message: "Error: <%= error.message %>",
+          })
+        )
+      )
+      .pipe(mainSass())
+      .pipe(
+        autoprefixer({
+          cascade: false,
+          grid: true,
+          overrideBrowserslist: ["last 5 versions"],
         })
       )
-    )
-    .pipe(mainSass())
-    .pipe(
-      autoprefixer({
-        cascade: false,
-        grid: true,
-        overrideBrowserslist: ["last 5 versions"],
-      })
-    )
-    .pipe(
-      gulpif(
-        isProd,
-        cleanCSS({
-          level: 2,
-        })
+      // .pipe(gcmq())
+      .pipe(
+        gulpif(
+          isProd,
+          cleanCSS({
+            level: 2,
+          })
+        )
       )
-    )
-    .pipe(dest(paths.buildCssFolder, { sourcemaps: "." }))
-    .pipe(browserSync.stream());
+      .pipe(dest(paths.buildCssFolder, { sourcemaps: "." }))
+      .pipe(browserSync.stream())
+  );
 };
 
 // styles backend

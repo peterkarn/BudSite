@@ -3,6 +3,7 @@ import vars from "./_vars";
 import "./_functions";
 import "./_components";
 import Dropdown from "../../node_modules/bootstrap/dist/js/bootstrap.min";
+import { hide } from "@popperjs/core";
 
 let inputs = document.querySelectorAll("input[type='tel']");
 let im = new Inputmask("+380 (99) 999 99 99");
@@ -25,19 +26,6 @@ const filterItem = document.querySelectorAll(".filter__item");
 const filterBtns = document.querySelector(".filter__btns");
 const filterCategories = document.querySelector(".filter__categories");
 
-filterBtns.addEventListener("click", (event) => {
-  if (event.target.tagName !== "BUTTON") return false;
-  let filterClass = event.target.dataset.filter;
-  console.log(filterClass);
-  filterItem.forEach((e) => {
-    if (!e.classList.contains(filterClass)) {
-      e.classList.add("hide");
-    } else {
-      e.classList.remove("hide");
-    }
-  });
-});
-
 filterCategories.addEventListener("click", (event) => {
   if (event.target.tagName !== "BUTTON") {
     return false;
@@ -53,4 +41,42 @@ filterCategories.addEventListener("click", (event) => {
       element.classList.remove("hide");
     }
   });
+});
+
+const tabsBtn = document.querySelectorAll(".filter__btn");
+const tabsParent = document.querySelector(".filter");
+const tabsContent = document.querySelectorAll(".tabs__content");
+
+function hideTabsContent() {
+  tabsContent.forEach((e) => {
+    e.classList.remove("show");
+    e.classList.add("hide");
+  });
+
+  tabsBtn.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+}
+
+function showTabsContent(i) {
+  tabsContent[i].classList.remove("hide");
+  tabsContent[i].classList.add("show");
+
+  tabsBtn[i].classList.add("active");
+}
+
+hideTabsContent();
+showTabsContent(0);
+
+tabsParent.addEventListener("click", (e) => {
+  const target = e.target;
+
+  if (target && target.classList.contains("filter__btn")) {
+    tabsBtn.forEach((e, i) => {
+      if (target == e) {
+        hideTabsContent();
+        showTabsContent(i);
+      }
+    });
+  }
 });

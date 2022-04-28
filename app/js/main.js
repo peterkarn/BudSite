@@ -6854,6 +6854,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var inputs = document.querySelectorAll("input[type='tel']");
 var im = new Inputmask("+380 (99) 999 99 99");
 im.mask(inputs); // import Dropdown from "../../node_modules/bootstrap/js/dist/dropdown";
@@ -6869,18 +6870,6 @@ im.mask(inputs); // import Dropdown from "../../node_modules/bootstrap/js/dist/d
 var filterItem = document.querySelectorAll(".filter__item");
 var filterBtns = document.querySelector(".filter__btns");
 var filterCategories = document.querySelector(".filter__categories");
-filterBtns.addEventListener("click", function (event) {
-  if (event.target.tagName !== "BUTTON") return false;
-  var filterClass = event.target.dataset.filter;
-  console.log(filterClass);
-  filterItem.forEach(function (e) {
-    if (!e.classList.contains(filterClass)) {
-      e.classList.add("hide");
-    } else {
-      e.classList.remove("hide");
-    }
-  });
-});
 filterCategories.addEventListener("click", function (event) {
   if (event.target.tagName !== "BUTTON") {
     return false;
@@ -6895,6 +6884,40 @@ filterCategories.addEventListener("click", function (event) {
       element.classList.remove("hide");
     }
   });
+});
+var tabsBtn = document.querySelectorAll(".filter__btn");
+var tabsParent = document.querySelector(".filter");
+var tabsContent = document.querySelectorAll(".tabs__content");
+
+function hideTabsContent() {
+  tabsContent.forEach(function (e) {
+    e.classList.remove("show");
+    e.classList.add("hide");
+  });
+  tabsBtn.forEach(function (btn) {
+    btn.classList.remove("active");
+  });
+}
+
+function showTabsContent(i) {
+  tabsContent[i].classList.remove("hide");
+  tabsContent[i].classList.add("show");
+  tabsBtn[i].classList.add("active");
+}
+
+hideTabsContent();
+showTabsContent(0);
+tabsParent.addEventListener("click", function (e) {
+  var target = e.target;
+
+  if (target && target.classList.contains("filter__btn")) {
+    tabsBtn.forEach(function (e, i) {
+      if (target == e) {
+        hideTabsContent();
+        showTabsContent(i);
+      }
+    });
+  }
 });
 })();
 

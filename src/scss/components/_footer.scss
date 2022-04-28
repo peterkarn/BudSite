@@ -1,5 +1,15 @@
 .footer {
-  padding: 50px;
+  @include adaptiv-value(padding-top, 50, 20, 1);
+  @include adaptiv-value(padding-bottom, 50, 20, 1);
+  @include adaptiv-value(padding-right, 50, 20, 1);
+  @include adaptiv-value(padding-left, 50, 20, 1);
+
+  &__form {
+    & p {
+      color: var(--primary);
+      margin-bottom: 25px;
+    }
+  }
 
   &__info {
     outline: 3px solid red;
@@ -14,5 +24,41 @@
 
   &__rights {
     margin-bottom: 11px;
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    max-width: 200px;
+
+    & h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    & a {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 100%;
+      color: var(--primary);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    & li:not(:last-child) {
+      margin-bottom: 5px;
+    }
   }
 }
