@@ -19,10 +19,16 @@
   font-family: "Muller", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #757575;
+  background: #E7F4f0;
 
-  p:not(:last-child) {
+  p:not(:last-child),
+  ul:not(:last-child) {
     line-height: 1.4;
     margin-bottom: 30px;
+  }
+
+  p.nogap {
+    margin-bottom: 0;
   }
 }
 
@@ -46,7 +52,7 @@ section {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow: hidden;
 }
 
 .container {
@@ -58,6 +64,10 @@ section {
   padding: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.accent {
+  color: var(--accent);
 }
 
 .section-title {
@@ -73,6 +83,13 @@ section {
   @media screen and (max-width: 767px) {
     font-size: 20px;
   }
+}
+
+.title-secondary {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--bs-dark);
+  margin-bottom: 1.5em;
 }
 
 .note {
