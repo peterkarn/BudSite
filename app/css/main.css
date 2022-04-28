@@ -9474,7 +9474,7 @@ section {
 .filter__categories {
   margin-bottom: 30px;
   outline: 3px solid red;
-  overflow: auto;
+  overflow-x: scroll;
 }
 @media (max-width: 1240px) {
   .filter__categories {
