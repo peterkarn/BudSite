@@ -1,0 +1,57 @@
+.page-table {
+  table {
+    width: 100%;
+  }
+
+  thead {
+    border-bottom: 1px solid #000;
+  }
+
+  th {
+    width: 25%;
+    color: var(--bs-dark);
+    padding-bottom: 15px;
+  }
+
+  // .w-40 {
+  //   width: 40%;
+  // }
+
+  // .w-10 {
+  //   width: 10%;
+  //   white-space: nowrap;
+  // }
+
+  &__column {
+    width: 50%;
+  }
+
+  &__item {
+    overflow: hidden;
+    // display: flex;
+
+    span {
+      flex-shrink: 0;
+    }
+
+    &::after {
+      background: red;
+      flex: 1;
+      display: inline;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
+      content: '';
+      // ". . . . . . . . . . . . . . . . . . . . "
+      // ". . . . . . . . . . . . . . . . . . . . "
+      // ". . . . . . . . . . . . . . . . . . . . "
+      // ". . . . . . . . . . . . . . . . . . . . "
+    }
+  }
+
+  &__price {
+    font-weight: bold;
+    color: #6C968F;
+    white-space: nowrap;
+  }
+}

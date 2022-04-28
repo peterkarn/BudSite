@@ -20,6 +20,7 @@
   font-weight: 400;
   color: #757575;
   background: #E7F4f0;
+  overflow-x: hidden;
 
   p:not(:last-child),
   ul:not(:last-child) {
@@ -49,14 +50,18 @@ a {
 
 section {
   padding: 45px 0;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 0;
+  }
 }
 
-.site-container {
-  overflow: hidden;
-}
+// .site-container {
+//   overflow: hidden;
+// }
 
 .container {
-  max-width: 1050px;
+  // max-width: 1050px;
 }
 
 .btn-reset {
@@ -190,4 +195,25 @@ section {
   background: var(--lightgreen);
   color: #fff;
   border-radius: 9px;
+}
+
+.list-with-bull {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+
+  li {
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 55px;
+      line-height: 0.55;
+      color: var(--bs-blue);
+    }
+  }
 }

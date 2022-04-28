@@ -27,6 +27,7 @@ const plumber = require("gulp-plumber");
 const path = require("path");
 const zip = require("gulp-zip");
 const rootFolder = path.basename(path.resolve());
+const gcmq = require('gulp-group-css-media-queries');
 
 // paths
 const srcFolder = "./src";
@@ -104,6 +105,9 @@ const styles = () => {
         overrideBrowserslist: ["last 5 versions"],
       })
     )
+     .pipe(
+       gcmq()
+     )
     .pipe(
       gulpif(
         isProd,
