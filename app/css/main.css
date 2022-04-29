@@ -4002,8 +4002,9 @@ a {
   color: inherit;
 }
 
-section {
-  padding: 45px 0;
+section + section,
+section:first-child {
+  margin-top: 90px;
 }
 
 .btn-reset {
@@ -4155,6 +4156,23 @@ section {
   font-size: 55px;
   line-height: 0.55;
   color: var(--bs-blue);
+}
+
+.sometestbtn {
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  background: #fff;
+  color: #757575;
+  border: 1px solid #757575;
+}
+
+.sometestbtn.is-active {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: var(--lightgreen);
+  border: 1px solid var(--lightgreen);
 }
 
 .form {
@@ -4417,10 +4435,6 @@ section {
   margin-right: 10px;
 }
 
-.faq {
-  background: var(--lightgreen);
-}
-
 .accordion-item {
   border: none;
   background: transparent;
@@ -4448,6 +4462,10 @@ section {
   border-radius: 50%;
   font-size: 0;
   background: #fff url("../img/svg/faq-plus.svg") no-repeat center;
+}
+
+.accordion-button:not(.collapsed) {
+  pointer-events: none;
 }
 
 .accordion-button:not(.collapsed):after {
@@ -10223,8 +10241,9 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  section {
-    padding: 20px 0;
+  section + section,
+  section:first-child {
+    margin-top: 40px;
   }
 
   .section-title {

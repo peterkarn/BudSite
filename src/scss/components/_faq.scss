@@ -1,9 +1,5 @@
 //accordion
 
-.faq {
-  background: var(--lightgreen);
-}
-
 .accordion-item {
   border: none;
   background: transparent;
@@ -33,6 +29,8 @@
 }
 
 .accordion-button:not(.collapsed) {
+  pointer-events: none;
+
   &:after {
     transform: rotate(45deg);
   }
