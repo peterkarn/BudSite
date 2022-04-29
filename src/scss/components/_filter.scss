@@ -1,10 +1,10 @@
 .filter {
 
   &__column {
+    flex: 0 0 240px;
+
     &:not(:last-child) {
-      @media screen and (max-width: 768px) {
-        margin-bottom: 25px;
-      }
+      margin-right: 25px;
     }
   }
 

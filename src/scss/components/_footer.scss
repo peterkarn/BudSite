@@ -1,20 +1,30 @@
 .footer {
-  @include adaptiv-value(padding-top, 50, 20, 1);
-  @include adaptiv-value(padding-bottom, 50, 20, 1);
-  @include adaptiv-value(padding-right, 50, 20, 1);
-  @include adaptiv-value(padding-left, 50, 20, 1);
+  background-color: var(--bs-dark);
 
   &__form {
     & p {
       color: var(--primary);
+      @include adaptiv-value(margin-bottom, 25, 10, 1)
+    }
+
+    @media screen and (max-width: 768px) {
       margin-bottom: 25px;
     }
   }
 
-  &__info {
-    outline: 3px solid red;
+  &__lists {
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    background-color: #296864;
   }
 
   &__logo {
@@ -37,6 +47,7 @@
       font-size: 16px;
       font-weight: 700;
       margin-bottom: 10px;
+      line-height: 140%;
       color: var(--primary);
     }
 
@@ -53,6 +64,10 @@
 
     &:not(:last-child) {
       margin-bottom: 30px;
+
+      @media screen and (max-width: 768px) {
+        margin-right: 25px;
+      }
     }
   }
 

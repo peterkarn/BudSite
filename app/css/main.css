@@ -9274,37 +9274,23 @@ section {
 }
 
 .footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: 50px;
-  padding-left: 50px;
-}
-@media (max-width: 1240px) {
-  .footer {
-    padding-top: calc(20px + 30 * ((100vw - 320px) / 920));
-  }
-}
-@media (max-width: 1240px) {
-  .footer {
-    padding-bottom: calc(20px + 30 * ((100vw - 320px) / 920));
-  }
-}
-@media (max-width: 1240px) {
-  .footer {
-    padding-right: calc(20px + 30 * ((100vw - 320px) / 920));
-  }
-}
-@media (max-width: 1240px) {
-  .footer {
-    padding-left: calc(20px + 30 * ((100vw - 320px) / 920));
-  }
+  background-color: var(--bs-dark);
 }
 .footer__form p {
   color: var(--primary);
   margin-bottom: 25px;
 }
-.footer__info {
-  outline: 3px solid red;
+@media (max-width: 1240px) {
+  .footer__form p {
+    margin-bottom: calc(10px + 15 * ((100vw - 320px) / 920));
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__form {
+    margin-bottom: 25px;
+  }
+}
+.footer__lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9312,6 +9298,24 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .footer__lists {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #296864;
 }
 .footer__logo {
   margin-bottom: 18px;
@@ -9330,6 +9334,7 @@ section {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px;
+  line-height: 140%;
   color: var(--primary);
 }
 .footer__item a {
@@ -9343,6 +9348,11 @@ section {
 }
 .footer__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .footer__item:not(:last-child) {
+    margin-right: 25px;
+  }
 }
 .footer__list li:not(:last-child) {
   margin-bottom: 5px;
@@ -9414,10 +9424,13 @@ section {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .filter__column:not(:last-child) {
-    margin-bottom: 25px;
-  }
+.filter__column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 240px;
+  flex: 0 0 240px;
+}
+.filter__column:not(:last-child) {
+  margin-right: 25px;
 }
 .filter__btns {
   display: -webkit-box;
