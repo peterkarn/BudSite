@@ -45,7 +45,7 @@ filterCategories.addEventListener("click", (event) => {
 });
 
 const tabsBtn = document.querySelectorAll(".filter__btn");
-const tabsParent = document.querySelector(".filter");
+const tabsParent = document.querySelectorAll(".filter");
 const tabsContent = document.querySelectorAll(".tabs__content");
 
 function hideTabsContent() {
@@ -69,18 +69,35 @@ function showTabsContent(i) {
 hideTabsContent();
 showTabsContent(0);
 
-tabsParent.addEventListener("click", (e) => {
-  const target = e.target;
+// tabsParent.addEventListener("click", (e) => {
+//   const target = e.target;
 
-  if (target && target.classList.contains("filter__btn")) {
-    tabsBtn.forEach((e, i) => {
-      if (target == e) {
-        hideTabsContent();
-        showTabsContent(i);
-      }
-    });
-  }
+//   if (target && target.classList.contains("filter__btn")) {
+//     tabsBtn.forEach((e, i) => {
+//       if (target == e) {
+//         hideTabsContent();
+//         showTabsContent(i);
+//       }
+//     });
+//   }
+// });
+
+tabsParent.forEach((parent) => {
+  parent.addEventListener("click", (e) => {
+    const target = e.target;
+    if (target && target.classList.contains("filter__btn")) {
+      tabsBtn.forEach((e, i) => {
+        if (target == e) {
+          hideTabsContent();
+          showTabsContent(i);
+        }
+      });
+    }
+  });
 });
+
+console.log(tabsParent);
+
 // splide
 
 if (document.querySelector(".splide")) {
