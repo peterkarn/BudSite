@@ -1,4 +1,8 @@
 .darked-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -28,9 +32,29 @@
   @include adaptiv-value(padding-right, 30, 10, 1);
   @include adaptiv-value(padding-left, 30, 10, 1);
 
-  background-image: url("../img/darked-bg.jpg");
+  background-image: url("../../img/darked-bg.jpg");
 
   &__title {
+    @include adaptiv-value(margin-bottom, 30, 15, 1)
+  }
+}
+
+.darked-test {
+  min-height: 390px;
+  @include adaptiv-value(padding-top, 30, 15, 1);
+  @include adaptiv-value(padding-bottom, 30, 15, 1);
+  @include adaptiv-value(padding-right, 30, 20, 1);
+  @include adaptiv-value(padding-left, 30, 20, 1);
+  background-image: url("../../img/darked-bg2.jpg");
+
+  & .darked-block__text {
+    text-align: center;
+    max-width: 465px;
+  }
+
+  .darked-block__title {
+    text-align: center;
+    max-width: 550px;
     @include adaptiv-value(margin-bottom, 30, 15, 1)
   }
 }

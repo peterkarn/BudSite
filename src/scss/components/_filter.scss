@@ -53,8 +53,8 @@
   }
 
   &__categories {
+    padding-bottom: 20px;
     @include adaptiv-value(margin-bottom, 30, 15, 1);
-    outline: 3px solid red;
     overflow-x: scroll;
 
     &-inner {

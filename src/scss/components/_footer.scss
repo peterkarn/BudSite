@@ -1,7 +1,18 @@
 .footer {
-  background-color: var(--bs-dark);
+  background-color: #296864;
+  @include adaptiv-value(padding-right, 80, 30, 1);
+  @include adaptiv-value(padding-left, 80, 30, 1);
+  @include adaptiv-value(padding-top, 30, 25, 1);
+  @include adaptiv-value(padding-bottom, 30, 25, 1);
+
+
+  position: relative;
+
 
   &__form {
+    z-index: 150;
+    position: relative;
+
     & p {
       color: var(--primary);
       @include adaptiv-value(margin-bottom, 25, 10, 1)
@@ -24,7 +35,7 @@
   &__info {
     display: flex;
     flex-direction: column;
-    background-color: #296864;
+
   }
 
   &__logo {

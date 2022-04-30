@@ -41,8 +41,13 @@ a {
   color: inherit;
 }
 
-section {
-  padding: 45px 0;
+section+section,
+section:first-child {
+  margin-top: 90px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
+  }
 }
 
 .site-container {
