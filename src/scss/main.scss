@@ -5,6 +5,7 @@
 @import "fonts";
 @import "settings";
 @import "form";
+@import "index";
 
 
 // подключения компонентов страницы
@@ -12,4 +13,5 @@
 @import "./components/footer";
 @import "./components/darked";
 @import "./components/filter";
+@import "./components/faq";
 @import "./components/customscroll";

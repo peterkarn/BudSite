@@ -1,2 +1,7 @@
 node_modules
+<<<<<<< HEAD
 app
+=======
+app/
+.DS_Store
+>>>>>>> pbranch

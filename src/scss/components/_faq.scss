@@ -1,0 +1,45 @@
+//accordion
+
+.faq {
+  background: var(--lightgreen);
+}
+
+.accordion-item {
+  border: none;
+  background: transparent;
+  margin-bottom: 30px;
+}
+
+.accordion-body {
+  background: #fff;
+  margin-top: 20px;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  background: #fff url('../img/svg/faq.svg') no-repeat 20px center;
+  color: var(--bs-dark);
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    border-radius: 50%;
+    font-size: 0;
+    background: #fff url('../img/svg/faq-plus.svg') no-repeat center;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  &:after {
+    transform: rotate(45deg);
+  }
+}
+
+.accordion-button {
+  padding-left: 75px;
+  padding-right: 75px;
+  font-weight: bold;
+}
