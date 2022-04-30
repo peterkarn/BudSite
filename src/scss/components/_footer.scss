@@ -1,17 +1,15 @@
 .footer {
-  background-color: #296864;
-  @include adaptiv-value(padding-right, 80, 30, 1);
-  @include adaptiv-value(padding-left, 80, 30, 1);
-  @include adaptiv-value(padding-top, 30, 25, 1);
-  @include adaptiv-value(padding-bottom, 30, 25, 1);
-
-
   position: relative;
-
+  // @include adaptiv-value(padding-right, 80, 30, 1);
+  // @include adaptiv-value(padding-left, 80, 30, 1);
+  // @include adaptiv-value(padding-top, 30, 25, 1);
+  // @include adaptiv-value(padding-bottom, 30, 25, 1);
+  background-color: var(--bs-dark);
 
   &__form {
     z-index: 150;
     position: relative;
+    padding: 30px 0; //тестовое значение
 
     & p {
       color: var(--primary);
@@ -35,7 +33,12 @@
   &__info {
     display: flex;
     flex-direction: column;
-
+    background-color: #296864;
+    padding: 30px 80px; //тестовое значение
+    // @include adaptiv-value(padding-right, 80, 30, 1);
+    // @include adaptiv-value(padding-left, 80, 30, 1);
+    // @include adaptiv-value(padding-top, 30, 25, 1);
+    // @include adaptiv-value(padding-bottom, 30, 25, 1);
   }
 
   &__logo {
