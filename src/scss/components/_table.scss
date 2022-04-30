@@ -1,0 +1,74 @@
+.page-table {
+  table {
+    width: 100%;
+    max-width: 100%;
+    min-width: 860px;
+  }
+
+  thead {
+    border-bottom: 1px solid #A3C1BC;
+  }
+
+  th {
+    width: 25%;
+    color: var(--bs-dark);
+    padding-bottom: 15px;
+  }
+
+  td:nth-child(even) {
+    padding-right: 30px;
+  }
+
+  .w-40 {
+    width: 40%;
+  }
+
+  .w-10 {
+    width: 10%;
+    white-space: nowrap;
+  }
+
+  &__column {
+    width: 50%;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+
+    span {
+      display: inline-block;
+      padding-right: 5px;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      width: 100%;
+      border-bottom: 2px dotted #ccc;
+    }
+  }
+
+  &__price {
+    font-weight: bold;
+    color: #6C968F;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  &__firstrow {
+    height: 35px;
+    vertical-align: bottom;
+  }
+
+  .pseduo-track {
+    top: -15px;
+
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+}

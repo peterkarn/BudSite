@@ -5,7 +5,6 @@ const del = require("del");
 const browserSync = require("browser-sync").create();
 const sass = require("sass");
 const gulpSass = require("gulp-sass");
-const gcmq = require("gulp-group-css-media-queries");
 const svgSprite = require("gulp-svg-sprite");
 const svgmin = require("gulp-svgmin");
 const cheerio = require("gulp-cheerio");
@@ -28,6 +27,7 @@ const plumber = require("gulp-plumber");
 const path = require("path");
 const zip = require("gulp-zip");
 const rootFolder = path.basename(path.resolve());
+const gcmq = require("gulp-group-css-media-queries");
 
 // paths
 const srcFolder = "./src";

@@ -1,0 +1,100 @@
+.slider-section {
+  .splide {
+    padding-bottom: 70px;
+
+    &__arrows {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30px;
+    }
+
+    &__arrow {
+      width: 35px;
+      height: 35px;
+      border-radius: 5px;
+      background: var(--lightgreen);
+
+      svg {
+        fill: #fff;
+      }
+    }
+
+    &__arrow--prev {
+      left: 0;
+    }
+
+    &__arrow--next {
+      right: 0;
+    }
+
+    &__pagination {
+      bottom: -5px;
+      padding: 0 2em;
+
+      @media screen and (max-width: 576px) {
+        min-height: 45px;
+      }
+    }
+
+    &__pagination__page {
+      width: 35px;
+      height: 35px;
+      border-radius: 7px;
+      background: #fff;
+      color: #757575;
+      border: 1px solid #757575;
+
+      @media screen and (max-width: 576px) {
+        width: 25px;
+        height: 25px;
+      }
+
+      &.is-active {
+        transform: none;
+        color: var(--lightgreen);
+        border: 1px solid var(--lightgreen);
+      }
+
+    }
+  }
+
+  .review-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: 10px;
+    background: #F5FBF6;
+    min-height: 265px;
+
+    @media screen and (max-width: 767px) {
+      min-height: 190px;
+    }
+
+    &__img {
+      flex: 0 0 80px;
+      height: 80px;
+      margin-right: 30px;
+      border-radius: 50%;
+
+      @media screen and (max-width: 767px) {
+        flex: 0 0 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+    }
+
+    &__name {
+      font-size: 16px;
+      color: var(--bs-dark);
+    }
+
+    &__date {
+      position: absolute;
+      font-size: 12px;
+      left: 30px;
+      bottom: 20px;
+    }
+  }
+}

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="uk" class="page">
+≪≪≪< HEAD <html lang="uk" class="page">
+  =======
+  <html lang="ua" class="page">
+  ≫≫≫> pbranch
 
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -9,13 +12,18 @@
   <meta name="theme-color" content="#111111">
   <title>Start</title>
   <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/splide.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
-<body class="page__body">
-  <div class="site-container">
-    <header class="header">
+  <body class="page__body">
+    <div class="site-container">
+
+      <header class="header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -55,778 +63,1101 @@
     </div>
   </nav>
 </header>
-    <main class="main">
-      <div class="container">
-        <section class="darked-block darked-form">
-          <div class="container">
 
-            <div class="row align-items-center justify-content-around">
-              <div class="col-lg-6 col-sm-12">
-                <div class="darked-block__info">
-                  <h1 class="darked-block__title darked-form__title">
-                    Локальний ремонт у вашому місті
-                  </h1>
-                  <p class="darked-block__text">
-                    Отримайте безкоштовну консультацію від наших спеціалістів
+      <main class="main">
+        <div class="container">
+
+          <!-- darked bock -->
+          <section class="darked-block darked-form">
+            <div class="container">
+
+              <div class="row align-items-center justify-content-around">
+                <div class="col-lg-6 col-sm-12">
+                  <div class="darked-block__info">
+                    <h1 class="darked-block__title darked-form__title">
+                      Локальний ремонт у вашому місті
+                    </h1>
+                    <p class="darked-block__text">
+                      Отримайте безкоштовну консультацію від наших спеціалістів
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                  <form action="#" class="form">
+                    <label class="form__label">
+                      <span>Ваше ім’я*</span>
+                      <input type="text" class="form__input input-reset" placeholder=" Ім'я">
+                    </label>
+                    <label class="form__label">
+                      <span>Ваш телефон*</span>
+                      <input type="tel" class="form__input input-reset" placeholder="+380 (__) ___ __ __">
+                    </label>
+                    <label class="form__label">
+                      <span>Електрона адреса</span>
+                      <input type="email" class="form__input input-reset" placeholder=" Email">
+                    </label>
+                    <button class="btn form__btn btn-primary align-self-md-start">Замовити консультацію</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- categories block -->
+          <section class="categories">
+            <div class="container">
+              <h1 class="section-title">
+                Категорії ремонтів
+              </h1>
+              <div class="filter">
+                <div class="row">
+                  <div class="filter__btns">
+                    <button class="btn filter__btn btn-outline-secondary active"
+                      data-filter="dirty">Чорновіроботи</button>
+                    <button class="btn filter__btn btn-outline-secondary" data-filter="clean">Чистові роботи</button>
+                  </div>
+                </div>
+                <div class="tabs__content">
+                  <div class="row">
+                    <div class="filter__categories">
+                      <h3 class="filter__title">
+                        Сортування:
+                      </h3>
+                      <div class="filter__categories-inner">
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__works">
+                    <div class="outer-wrapper">
+                      <div class="inner-wrapper">
+                        <div class="filter__column">
+                          <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img1.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img2.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img3.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img4.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img1.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item dirty else" data-filter-resultcategory="else">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img2.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item clean roof" data-filter-resultcategory="roof">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img3.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img4.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pseduo-track"></div>
+                  </div>
+                </div>
+                <div class="tabs__content">
+                  <div class="row">
+                    <div class="filter__categories">
+                      <h3 class="filter__title">
+                        Сортування:
+                      </h3>
+                      <div class="filter__categories-inner">
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__works">
+                    <div class="outer-wrapper">
+                      <div class="inner-wrapper">
+                        <div class="filter__column">
+                          <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img1.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img2.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img3.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img4.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img1.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item dirty else" data-filter-resultcategory="else">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img2.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item clean roof" data-filter-resultcategory="roof">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img3.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__column">
+                          <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
+                            <a href="#" class="filter__img ibg">
+                              <img src="img/filter-img4.jpg" alt="Work">
+                            </a>
+                            <div class="filter__item-content">
+                              <div class="filter__item-info">
+                                <p>
+                                  Назва робіт
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pseduo-track"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- darked block  -->
+          <section class="darked-block darked-test">
+            <h1 class="darked-block__title">
+              Дізнайтесь який ремонт підійде саме вам
+            </h1>
+            <p class="darked-block__text">
+              Ніяк не можете визначитися з типом ремонту та послугами? Пройдіть швидкий тест, якій допоможе вирішити це
+              питання
+            </p>
+            <a href="#" class="btn btn-primary">Перейти до тесту</a>
+          </section>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Section text and image -->
+    <section class="info-section">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <h2 class="section-title">
+              <span>Типовий обсяг робіт під</span>
+              <span>час ремонту квартири</span>
+            </h2>
+            <p>Ремонт квартири — це трудомісткий та недешевий захід, до якого потрібно підготуватися морально та
+              матеріально.</p>
+            <p><strong>Відремонтувати квартиру у Хмельницькому — швидко, якісно та з найменшими витратами — вам допоможе
+                компанія «Локальний Ремонт», яка працює в цій області понад 9 років.</strong></p>
+            <p>Щоб зрозуміти, скільки грошей потрібно виділити на проведення ремонтних робіт, складається попередній
+              кошторис, до якого входить вартість матеріалів та оплата праці спеціалістів. Що стосується придбання
+              матеріалів — їх можна купити всі відразу, якщо дозволяють кошти і є місце для їх зберігання, а можна
+              купувати їх частинами, поетапно.</p>
+          </div>
+          <div class="col-md-5">
+            <div class="images-list">
+              <div class="images-list__item ibg rounded-edges">
+                <img src="img/index/info-1.jpg" alt="Image item">
+              </div>
+              <div class="images-list__item ibg rounded-edges">
+                <img src="img/index/info-2.jpg" alt="Image item">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="note col-md-7">
+          Грамотно розрахувати час та засоби для ремонту квартири у Хмельницькому, запропонувати найкращі ціни на
+          ремонтні
+          послуги, а також дати рекомендації щодо придбання матеріалів вам допоможуть фахівці компанії «Локальний
+          Ремонт».
+        </div>
+      </div>
+    </section>
+    <!-- Section text and image -->
+
+    <!-- Section FAQ -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">
+          FAQ
+        </h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="accordion accordion-flush faq__accordion" id="accordionColumn">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="accordionItem1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="accordionItem1"
+                  data-bs-parent="#accordionColumn">
+                  <div class="accordion-body">
+                    <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionColumn">
+                  <div class="accordion-body">
+                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionColumn">
+                  <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="accordion accordion-flush faq__accordion" id="accordionColumnTwo">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="accordionItem1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="accordionItem1"
+                  data-bs-parent="#accordionColumnTwo">
+                  <div class="accordion-body">
+                    <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2"
+                  data-bs-parent="#accordionColumnTwo">
+                  <div class="accordion-body">
+                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionColumnTwo">
+                  <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Section FAQ -->
+
+    <!-- Section with list -->
+    <section class="list-section">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title">
+            Етапи ремонтних робіт
+          </h2>
+          <p class="col-md-5 mb-md-4">Будь-який із видів ремонту квартири — і косметичний, і капітальний — ділиться на
+            чотири основні етапи:</p>
+        </div>
+        <div class="list-section__list" data-simplebar>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="list-section__item">
+                <h3 class="list-section__title title-secondary">
+                  Фінішне оздоблення
+                </h3>
+                <div class="list-section__text">
+                  <p>Фінішне або чистове оздоблення передбачає приведення квартири в повний житловий стан. На
+                    цьому етапі
+                    здійснюють наступні ремонтні роботи:</p>
+                  <ul>
+                    <li>нанесення декоративних покриттів — фарби, шпалер, панелей;</li>
+                    <li>укладання підлогового покриття;</li>
+                    <li>встановлення сантехніки, світильників, електрофурнітури;</li>
+                    <li>натяжні стелі;</li>
+                    <li>прибирання.</li>
+                  </ul>
+                  <p>Все, що вам залишиться зробити після фінішної обробки — лише розставити меблі, повісити
+                    штори та
+                    інший декор.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="list-section__item">
+                <h3 class="list-section__title title-secondary">
+                  Підготовка
+                </h3>
+                <div class="list-section__text">
+                  <p>Даний етап починається зі звільнення квартири від предметів обстановки та пошуку майстрів, які
+                    виконуватимуть ремонтні роботи. Наша команда допоможе підготувати усі поверхні квартири до подальшої
+                    обробки, у тому числі видалить шпалери та лакофарбове покриття, та демонтує:</p>
+                  <ul>
+                    <li>вікна та двері;</li>
+                    <li>кахель та підлогове покриття;</li>
+                    <li>натяжні або підвісні стелі, плінтуси та інші елементи.</li>
+                  </ul>
+                  <p>Також до нашої компетенції входить демонтаж старих та зведення нових перегородок, дверних отворів
+                    та
+                    інших елементів планування, якщо це передбачено у дизайн-проекті квартири. А завершуємо ми
+                    підготовчий
+                    етап винесенням будівельного сміття.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="list-section__item">
+                <h3 class="list-section__title title-secondary">
+                  Чорнове оздоблення
+                </h3>
+                <div class="list-section__text">
+                  <p class="nogap">Цей етап ремонтних робіт можна назвати найбільш відповідальним, адже від якості
+                    матеріалів і майстерності фахівців залежить добротність і довговічність ремонту вашої квартири.
+                    Чорнова обробка включає:</p>
+                  <ul>
+                    <li>стяжку підлоги;</li>
+                    <li>утеплення та гідроізоляцію;</li>
+                    <li>прокладання електропроводки та сантехнічних комунікацій;</li>
+                    <li>оштукатурювання поверхонь;</li>
+                    <li>монтаж віконних та дверних блоків;</li>
+                    <li>встановлення систем опалення, вентиляції та кондиціювання.</li>
+                  </ul>
+                  <p class="accent">* До такої важливої ​​роботи допускаються лише майстри, які мають відповідну
+                    кваліфікацію, і саме таких спеціалістів надає для ремонту квартир у Хмельницькому «Локальний
+                    Ремонт».
                   </p>
                 </div>
               </div>
-              <div class="col-lg-5 col-sm-12">
-                <form action="#" class="form">
-                  <label class="form__label">
-                    <span>Ваше ім’я*</span>
-                    <input type="text" class="form__input input-reset" placeholder=" Ім'я">
-                  </label>
-                  <label class="form__label">
-                    <span>Ваш телефон*</span>
-                    <input type="tel" class="form__input input-reset" placeholder="+380 (__) ___ __ __">
-                  </label>
-                  <label class="form__label">
-                    <span>Електрона адреса</span>
-                    <input type="email" class="form__input input-reset" placeholder=" Email">
-                  </label>
-                  <button class="btn form__btn btn-primary align-self-md-start">Замовити консультацію</button>
-                </form>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="list-section__item">
+                <h3 class="list-section__title title-secondary">
+                  Перед чистове оздоблення
+                </h3>
+                <div class="list-section__text">
+                  <p>Треба розуміти, що цей етап — для терплячих. Він займає приблизно чверть усього часу, відведеного
+                    на
+                    ремонт квартири, оскільки тут використовуються матеріали, що потребують строго контрольованого
+                    терміну
+                    висихання. Головне завдання перед чистової обробки — підготовка поверхонь до нанесення декоративних
+                    покриттів та інші завершальні роботи. Сюди входить:</p>
+                  <ul>
+                    <li>засклення балкона, встановлення міжкімнатних дверей, кондиціонерів, радіаторів опалення тощо;
+                    </li>
+                    <li>нанесення ґрунтовки;</li>
+                    <li>остаточне вирівнювання за допомогою шпаклівки стін, укосів та стиків;</li>
+                    <li>укладання плитки;</li>
+                    <li>наливна підлога.</li>
+                  </ul>
+                </div>
+    </section>
+
+    <!-- Section text and image -->
+    <section class="info-section">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <h2 class="section-title">
+              <span>Типовий обсяг робіт під</span>
+              <span>час ремонту квартири</span>
+            </h2>
+            <p>Ремонт квартири — це трудомісткий та недешевий захід, до якого потрібно підготуватися морально та
+              матеріально.</p>
+            <p><strong>Відремонтувати квартиру у Хмельницькому — швидко, якісно та з найменшими витратами — вам допоможе
+                компанія «Локальний Ремонт», яка працює в цій області понад 9 років.</strong></p>
+            <p>Щоб зрозуміти, скільки грошей потрібно виділити на проведення ремонтних робіт, складається попередній
+              кошторис, до якого входить вартість матеріалів та оплата праці спеціалістів. Що стосується придбання
+              матеріалів — їх можна купити всі відразу, якщо дозволяють кошти і є місце для їх зберігання, а можна
+              купувати їх частинами, поетапно.</p>
+          </div>
+          <div class="col-md-5">
+            <div class="images-list">
+              <div class="images-list__item ibg rounded-edges">
+                <img src="img/index/info-1.jpg" alt="Image item">
+              </div>
+              <div class="images-list__item ibg rounded-edges">
+                <img src="img/index/info-2.jpg" alt="Image item">
               </div>
             </div>
           </div>
-        </section>
-        <section class="categories">
-          <div class="container">
-            <h1 class="section-title">
-              Категорії ремонтів
-            </h1>
-            <div class="filter">
-              <div class="row">
-                <div class="filter__btns">
-                  <button class="btn filter__btn btn-outline-secondary active"
-                    data-filter="dirty">Чорновіроботи</button>
-                  <button class="btn filter__btn btn-outline-secondary" data-filter="clean">Чистові роботи</button>
-                </div>
-              </div>
-              <div class="tabs__content">
-                <div class="row">
-                  <div class="filter__categories">
-                    <h3 class="filter__title">
-                      Сортування:
-                    </h3>
-                    <div class="filter__categories-inner">
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
-
-                      <button class="btn filter__category btn-outline-secondary" data-category="demontage">
-                        Демонтаж
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="else">
-                        Стіни
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="roof">
-                        Підлога
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="demontage">
-                        Демонтаж
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="else">
-                        Стіни
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="roof">
-                        Підлога
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter__works">
-                  <div class="outer-wrapper">
-                    <div class="inner-wrapper">
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img1.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img2.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img3.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img4.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img1.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty else" data-filter-resultcategory="else">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img2.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item clean roof" data-filter-resultcategory="roof">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img3.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img4.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pseduo-track"></div>
-                </div>
-              </div>
-              <div class="tabs__content">
-                <div class="row">
-                  <div class="filter__categories">
-                    <h3 class="filter__title">
-                      Сортування:
-                    </h3>
-                    <div class="filter__categories-inner">
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
-
-                      <button class="btn filter__category btn-outline-secondary" data-category="demontage">
-                        Демонтаж
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="else">
-                        Стіни
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="roof">
-                        Підлога
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="demontage">
-                        Демонтаж
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="else">
-                        Стіни
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="roof">
-                        Підлога
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter__works">
-                  <div class="outer-wrapper">
-                    <div class="inner-wrapper">
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img1.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img2.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img3.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img4.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img1.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty else" data-filter-resultcategory="else">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img2.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item clean roof" data-filter-resultcategory="roof">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img3.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img4.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pseduo-track"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="darked-block darked-test">
-          <h1 class="darked-block__title">
-            Дізнайтесь який ремонт підійде саме вам
-          </h1>
-          <p class="darked-block__text">
-            Ніяк не можете визначитися з типом ремонту та послугами? Пройдіть швидкий тест, якій допоможе вирішити це
-            питання
-          </p>
-          <a href="#" class="btn btn-primary">Перейти до тесту</a>
-        </section>
+        </div>
       </div>
+      </div>
+      </div>
+    </section>
+    <!-- Section with list -->
 
-  </div>
-  </section> -->
-
-  <!-- Section text and image -->
-  <section class="info-section">
-    <div class="container">
-      <div class="row mb-3">
-        <div class="col-md-6">
+    <!-- Section works -->
+    <section class="works-section">
+      <div class="works-section__header">
+        <div class="col-md-7">
           <h2 class="section-title">
-            <span>Типовий обсяг робіт під</span>
-            <span>час ремонту квартири</span>
+            Майстри, які працюватимуть над вашим ремонтом за спеціальностями
           </h2>
-          <p>Ремонт квартири — це трудомісткий та недешевий захід, до якого потрібно підготуватися морально та
-            матеріально.</p>
-          <p><strong>Відремонтувати квартиру у Хмельницькому — швидко, якісно та з найменшими витратами — вам допоможе
-              компанія «Локальний Ремонт», яка працює в цій області понад 9 років.</strong></p>
-          <p>Щоб зрозуміти, скільки грошей потрібно виділити на проведення ремонтних робіт, складається попередній
-            кошторис, до якого входить вартість матеріалів та оплата праці спеціалістів. Що стосується придбання
-            матеріалів — їх можна купити всі відразу, якщо дозволяють кошти і є місце для їх зберігання, а можна
-            купувати їх частинами, поетапно.</p>
-        </div>
-        <div class="col-md-5">
-          <div class="images-list">
-            <div class="images-list__item ibg rounded-edges">
-              <img src="img/index/info-1.jpg" alt="Image item">
-            </div>
-            <div class="images-list__item ibg rounded-edges">
-              <img src="img/index/info-2.jpg" alt="Image item">
-            </div>
-          </div>
+          <p class="mb-4">Найкраще, коли над ремонтом квартири працює злагоджена бригада спеціалістів під керівництвом
+            виконроба. Тоді кожен майстер спокійно займається своєю справою, а виконроб відповідає за всі організаційні
+            питання. Що ж входить до обов’язків кожного з них?</p>
         </div>
       </div>
-      <div class="note col-md-7">
-        Грамотно розрахувати час та засоби для ремонту квартири у Хмельницькому, запропонувати найкращі ціни на ремонтні
-        послуги, а також дати рекомендації щодо придбання матеріалів вам допоможуть фахівці компанії «Локальний Ремонт».
-      </div>
-    </div>
-  </section>
-  <!-- Section text and image -->
+      <div class="works-section__body outer-wrapper">
+        <div class="inner-wrapper">
 
-  <!-- Section FAQ -->
-  <section class="faq">
-    <div class="container">
-      <h2 class="section-title">
-        FAQ
-      </h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="accordion accordion-flush faq__accordion" id="accordionColumn">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="accordionItem1">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="accordionItem1"
-                data-bs-parent="#accordionColumn">
-                <div class="accordion-body">
-                  <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionColumn">
-                <div class="accordion-body">
-                  <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionColumn">
-                <div class="accordion-body">
-                  <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
+          <div class="item-works works-section__item item-works_paint">
+            <h3 class="item-works__title title-secondary">
+              Маляри-штукатури
+            </h3>
+            <p class="nogap">
+              Ці спеціалісти беруть участь у всіх чотирьох етапах ремонту квартири. До їхнього завдання входить:
+            </p>
+            <ul>
+              <li>очищення стін від шпалер, штукатурки та інших покриттів;</li>
+              <li>зняття лакофарбових покриттів;</li>
+              <li>наклеювання штукатурної сітки і нанесення штукатурного шару;</li>
+              <li>вирівнювання та шпаклювання поверхонь;</li>
+              <li>ґрунтівка, фарбування, поклейка шпалер та багато іншого.</li>
+            </ul>
+            <p class="accent">
+              Фахівці з ремонту квартир повинні не просто мати найвищий рівень майстерності, а й бути оснащені
+              сучасними
+              приладами та інструментами. Таких майстрів, озброєних новітньою технікою та знаннями, ви знайдете у
+              нашій
+              компанії.
+            </p>
           </div>
-        </div>
 
-        <div class="col-md-6">
-          <div class="accordion accordion-flush faq__accordion" id="accordionColumnTwo">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="accordionItem1">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="accordionItem1"
-                data-bs-parent="#accordionColumnTwo">
-                <div class="accordion-body">
-                  <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2"
-                data-bs-parent="#accordionColumnTwo">
-                <div class="accordion-body">
-                  <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionColumnTwo">
-                <div class="accordion-body">
-                  <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
+          <div class="item-works works-section__item item-works_tiles">
+            <h3 class="item-works__title title-secondary">
+              Плиточники-облицювальники
+            </h3>
+            <p class="nogap">
+              Для укладання кахлю потрібні «рівні руки» та відмінний окомір. Наші професіонали швидко та якісно
+              виконують
+              наступний перелік робіт:
+            </p>
+            <ul>
+              <li>укладання плитки на стіни та підлогу;</li>
+              <li>монтаж керамічних плінтусів;</li>
+              <li>облицювання кахлем сходів, плінтусів, укосів та інших елементів;</li>
+              <li>укладання мозаїки та мозаїчної плитки;</li>
+              <li>облицювання декоративним каменем;</li>
+              <li>монтаж декоративного керамічного панно та багато іншого.</li>
+            </ul>
           </div>
-        </div>
 
-      </div>
-    </div>
-  </section>
-  <!-- Section FAQ -->
+          <div class="item-works works-section__item item-works_santech">
+            <h3 class="item-works__title title-secondary">
+              Сантехніки
+            </h3>
+            <p>
+              В їх обов’язки входить прокладання водопровідних та каналізаційних труб, заміна стояків, монтаж
+              сантехнічних
+              приладів — ванн, душових кабін, раковин, унітазів, біде, — а також підключення водонагрівальних
+              приладів.
+            </p>
+          </div>
 
-  <!-- Section with list -->
-  <section class="list-section">
-    <div class="container">
-      <div class="row">
-        <h2 class="section-title">
-          Етапи ремонтних робіт
+          <div class="item-works works-section__item item-works_energy">
+            <h3 class="item-works__title title-secondary">
+              Електрики
+            </h3>
+            <p>Ці майстри здійснюють монтаж електропроводки, теплої підлоги, встановлюють електричні лічильники,
+              розподільні коробки, розетки, вимикачі, освітлювальні прилади. Вони, поряд з виконробом, відповідають
+              за
+              електробезпеку вашої квартири, тому кожен із наших фахівців-електриків має відповідну кваліфікацію.
+            </p>
+            <p class="accent">За потреби ми залучаємо до ремонту квартир й інших наших фахівців — столярів,
+              теслярів,
+              зварювальників, склярів, мулярів та дизайнерів інтер'єру. Виконаємо будь які роботи швидко та якісно.
+              За
+              деталями звертайтеся до наших менеджерів.</p>
+          </div>
+          <div class="pseduo-track"></div>
+    </section>
+    <!-- Section works -->
+
+    <!-- Section list image -->
+    <section class="list-image-section">
+      <div class="container">
+        <h2 class="section-title col-md-6">
+          Які послуги замовляють найчастіше
         </h2>
-        <p class="col-md-5 mb-md-4">Будь-який із видів ремонту квартири — і косметичний, і капітальний — ділиться на
-          чотири основні етапи:</p>
-      </div>
-      <div class="list-section__list" data-simplebar>
         <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="list-section__item">
-              <h3 class="list-section__title title-secondary">
-                Підготовка
-              </h3>
-              <div class="list-section__text">
-                <p>Даний етап починається зі звільнення квартири від предметів обстановки та пошуку майстрів, які
-                  виконуватимуть ремонтні роботи. Наша команда допоможе підготувати усі поверхні квартири до подальшої
-                  обробки, у тому числі видалить шпалери та лакофарбове покриття, та демонтує:</p>
-                <ul>
-                  <li>вікна та двері;</li>
-                  <li>кахель та підлогове покриття;</li>
-                  <li>натяжні або підвісні стелі, плінтуси та інші елементи.</li>
-                </ul>
-                <p>Також до нашої компетенції входить демонтаж старих та зведення нових перегородок, дверних отворів та
-                  інших елементів планування, якщо це передбачено у дизайн-проекті квартири. А завершуємо ми підготовчий
-                  етап винесенням будівельного сміття.</p>
-              </div>
-            </div>
+          <div class="col-md-5">
+            <p class="mb-3">
+              Серед найпоширеніших послуг з ремонту квартир можна виділити такі:
+            </p>
+            <ul class="list-with-bull">
+              <li>перепланування;</li>
+              <li>зняття та поклейка шпалер;</li>
+              <li>облицювання плиткою;</li>
+              <li>стяжка підлоги;</li>
+              <li>заміна дверей та вікон;</li>
+              <li>укладання підлогових покриттів.</li>
+            </ul>
+            <p>
+              Перепланування найчастіше замовляють, щоб надати старій квартирі сучасного вигляду. Наприклад, перетворити
+              тісну однокімнатну хрущовку на красиву модну студію або розширити санвузол. Інші перераховані послуги
+              відносяться до косметичного ремонту, який необхідно робити періодично для надання житлу свіжого та
+              доглянутого вигляду.
+            </p>
           </div>
-          <div class="col-md-6 mb-4">
-            <div class="list-section__item">
-              <h3 class="list-section__title title-secondary">
-                Чорнове оздоблення
-              </h3>
-              <div class="list-section__text">
-                <p class="nogap">Цей етап ремонтних робіт можна назвати найбільш відповідальним, адже від якості
-                  матеріалів і майстерності фахівців залежить добротність і довговічність ремонту вашої квартири.
-                  Чорнова обробка включає:</p>
-                <ul>
-                  <li>стяжку підлоги;</li>
-                  <li>утеплення та гідроізоляцію;</li>
-                  <li>прокладання електропроводки та сантехнічних комунікацій;</li>
-                  <li>оштукатурювання поверхонь;</li>
-                  <li>монтаж віконних та дверних блоків;</li>
-                  <li>встановлення систем опалення, вентиляції та кондиціювання.</li>
-                </ul>
-                <p class="accent">* До такої важливої ​​роботи допускаються лише майстри, які мають відповідну
-                  кваліфікацію, і саме таких спеціалістів надає для ремонту квартир у Хмельницькому «Локальний Ремонт».
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="list-section__item">
-              <h3 class="list-section__title title-secondary">
-                Перед чистове оздоблення
-              </h3>
-              <div class="list-section__text">
-                <p>Треба розуміти, що цей етап — для терплячих. Він займає приблизно чверть усього часу, відведеного на
-                  ремонт квартири, оскільки тут використовуються матеріали, що потребують строго контрольованого терміну
-                  висихання. Головне завдання перед чистової обробки — підготовка поверхонь до нанесення декоративних
-                  покриттів та інші завершальні роботи. Сюди входить:</p>
-                <ul>
-                  <li>засклення балкона, встановлення міжкімнатних дверей, кондиціонерів, радіаторів опалення тощо;</li>
-                  <li>нанесення ґрунтовки;</li>
-                  <li>остаточне вирівнювання за допомогою шпаклівки стін, укосів та стиків;</li>
-                  <li>укладання плитки;</li>
-                  <li>наливна підлога.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="list-section__item">
-              <h3 class="list-section__title title-secondary">
-                Фінішне оздоблення
-              </h3>
-              <div class="list-section__text">
-                <p>Фінішне або чистове оздоблення передбачає приведення квартири в повний житловий стан. На цьому етапі
-                  здійснюють наступні ремонтні роботи:</p>
-                <ul>
-                  <li>нанесення декоративних покриттів — фарби, шпалер, панелей;</li>
-                  <li>укладання підлогового покриття;</li>
-                  <li>встановлення сантехніки, світильників, електрофурнітури;</li>
-                  <li>натяжні стелі;</li>
-                  <li>прибирання.</li>
-                </ul>
-                <p>Все, що вам залишиться зробити після фінішної обробки — лише розставити меблі, повісити штори та
-                  інший декор.</p>
-              </div>
+          <div class="col-md-7">
+            <div class="list-image-section__img ibg">
+              <img src="img/index/info-3.jpg" alt="Photo">
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Section with list -->
+    </section>
 
-  <!-- Section works -->
-  <section class="works-section">
-    <div class="works-section__header">
-      <div class="col-md-7">
+    <!-- text section only -->
+    <section class="text-section">
+      <div class="container">
         <h2 class="section-title">
-          Майстри, які працюватимуть над вашим ремонтом за спеціальностями
+          Терміни виконання ремонтів у Хмельницькому
         </h2>
-        <p class="mb-4">Найкраще, коли над ремонтом квартири працює злагоджена бригада спеціалістів під керівництвом
-          виконроба. Тоді кожен майстер спокійно займається своєю справою, а виконроб відповідає за всі організаційні
-          питання. Що ж входить до обов’язків кожного з них?</p>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Терміни виконання <strong>ремонтних робіт</strong>, головним чином, залежать від площі квартири, висоти
+              стелі та виду ремонту. До того ж слід знати, що двокімнатна квартира буде ремонтуватись швидше, ніж
+              однокімнатна (бо поки сохне одна кімната можна робити іншу). І цей факт також перекладається на вартість
+              ремонту.</p>
+          </div>
+          <div class="col-md-6">
+            <p>У середньому, косметичний ремонт квартири <strong>площею 40-70 м2</strong> здійснюється за один місяць,
+              капітальний — за 2-2,5 місяці, а елітний або дизайнерський ремонт може зайняти від 70 до 100 днів. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- text section only -->
+
+    <!-- slider section -->
+    <section class="slider-section">
+      <div class="container">
+        <h2 class="section-title">
+          Відгуки
+        </h2>
+        <div class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide review-card">
+                <div class="review-card__img ibg">
+                  <img src="img/index/user.jpg" alt="Photo">
+                </div>
+                <div class="review-card__text">
+                  <h4 class="review-card__name">Катерина Петрова</h4>
+                  <div class="review-card__descr">
+                    <p>«Дякую „Локальному Ремонту“ за якісно та оперативно виконану роботу! Хлопці молодці!»</p>
+                  </div>
+                  <span class="review-card__date">10.03.2022</span>
+                </div>
+              </li>
+              <li class="splide__slide review-card">
+                <div class="review-card__img ibg">
+                  <img src="img/index/user.jpg" alt="Photo">
+                </div>
+                <div class="review-card__text">
+                  <h4 class="review-card__name">Катерина Петрова</h4>
+                  <div class="review-card__descr">
+                    <p>«Дякую „Локальному Ремонту“ за якісно та оперативно виконану роботу! Хлопці молодці!»</p>
+                  </div>
+                  <span class="review-card__date">10.03.2022</span>
+                </div>
+              </li>
+              <li class="splide__slide review-card">
+                <div class="review-card__img ibg">
+                  <img src="img/index/user.jpg" alt="Photo">
+                </div>
+                <div class="review-card__text">
+                  <h4 class="review-card__name">Катерина Петрова</h4>
+                  <div class="review-card__descr">
+                    <p>«Дякую „Локальному Ремонту“ за якісно та оперативно виконану роботу! Хлопці молодці!»</p>
+                  </div>
+                  <span class="review-card__date">10.03.2022</span>
+                </div>
+              </li>
+              <li class="splide__slide review-card">
+                <div class="review-card__img ibg">
+                  <img src="img/index/user.jpg" alt="Photo">
+                </div>
+                <div class="review-card__text">
+                  <h4 class="review-card__name">Катерина Петрова</h4>
+                  <div class="review-card__descr">
+                    <p>«Дякую „Локальному Ремонту“ за якісно та оперативно виконану роботу! Хлопці молодці!»</p>
+                  </div>
+                  <span class="review-card__date">10.03.2022</span>
+                </div>
+              </li>
+              <li class="splide__slide review-card">
+                <div class="review-card__img ibg">
+                  <img src="img/index/user.jpg" alt="Photo">
+                </div>
+                <div class="review-card__text">
+                  <h4 class="review-card__name">Катерина Петрова</h4>
+                  <div class="review-card__descr">
+                    <p>«Дякую „Локальному Ремонту“ за якісно та оперативно виконану роботу! Хлопці молодці!»</p>
+                  </div>
+                  <span class="review-card__date">10.03.2022</span>
+                </div>
+              </li>
+              <li class="splide__slide review-card">
+                <div class="review-card__img ibg">
+                  <img src="img/index/user.jpg" alt="Photo">
+                </div>
+                <div class="review-card__text">
+                  <h4 class="review-card__name">Катерина Петрова</h4>
+                  <div class="review-card__descr">
+                    <p>«Дякую „Локальному Ремонту“ за якісно та оперативно виконану роботу! Хлопці молодці!»</p>
+                  </div>
+                  <span class="review-card__date">10.03.2022</span>
+                </div>
+              </li>
+              <li class="splide__slide review-card">
+                <div class="review-card__img ibg">
+                  <img src="img/index/user.jpg" alt="Photo">
+                </div>
+                <div class="review-card__text">
+                  <h4 class="review-card__name">Катерина Петрова</h4>
+                  <div class="review-card__descr">
+                    <p>«Дякую „Локальному Ремонту“ за якісно та оперативно виконану роботу! Хлопці молодці!»</p>
+                  </div>
+                  <span class="review-card__date">10.03.2022</span>
+                </div>
+              </li>
+              <li class="splide__slide review-card">
+                <div class="review-card__img ibg">
+                  <img src="img/index/user.jpg" alt="Photo">
+                </div>
+                <div class="review-card__text">
+                  <h4 class="review-card__name">Катерина Петрова</h4>
+                  <div class="review-card__descr">
+                    <p>«Дякую „Локальному Ремонту“ за якісно та оперативно виконану роботу! Хлопці молодці!»</p>
+                  </div>
+                  <span class="review-card__date">10.03.2022</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- slider section -->
+
+    </main>
+    <!-- text section only -->
+
+    <!-- table -->
+    <div class="page-table mt-4">
+      <div class="container">
+        <div class="outer-wrapper">
+          <div class="inner-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th class="w-40">Ремонт квартир</th>
+                  <th class="w-10">Ціна, грн /м2</th>
+                  <th class="w-40"></th>
+                  <th class="w-10">Ціна, грн /м2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="page-table__firstrow">
+                  <td class="page-table__item">
+                    <span>Зняття старих шпалер </span>
+                  </td>
+                  <td class="page-table__price">
+                    від 10 грн.
+                  </td>
+                  <td class="page-table__item">
+                    <span>Демонтаж цегляної стіни</spa>
+                  </td>
+                  <td class="page-table__price">
+                    від 10 грн.
+                  </td>
+                </tr>
+                <tr class="page-table__firstrow">
+                  <td class="page-table__item">
+                    <span>Зняття старих шпалер </span>
+                  </td>
+                  <td class="page-table__price">
+                    від 10 грн.
+                  </td>
+                  <td class="page-table__item">
+                    <span>Демонтаж цегляної стіни</spa>
+                  </td>
+                  <td class="page-table__price">
+                    від 10 грн.
+                  </td>
+                </tr>
+                <tr class="page-table__firstrow">
+                  <td class="page-table__item">
+                    <span>Зняття старих шпалер </span>
+                  </td>
+                  <td class="page-table__price">
+                    від 10 грн.
+                  </td>
+                  <td class="page-table__item">
+                    <span>Демонтаж цегляної стіни</spa>
+                  </td>
+                  <td class="page-table__price">
+                    від 10 грн.
+                  </td>
+                </tr>
+                <tr class="page-table__firstrow">
+                  <td class="page-table__item">
+                    <span>Демонтаж стяжки</span>
+                  </td>
+                  <td class="page-table__price">
+                    від 10 грн.
+                  </td>
+                  <td class="page-table__item">
+                    <span>Демонтаж цегляної стіни</spa>
+                  </td>
+                  <td class="page-table__price">
+                    від 10 грн.
+                  </td>
+                </tr>
+                <tr class="page-table__firstrow">
+                  <td class="page-table__item">
+                    <span>Зняття старих шпалер </span>
+                  </td>
+                  <td class="page-table__price">
+                    від 10 грн.
+                  </td>
+                  <td class="page-table__item">
+                    <span>Демонтаж цегляної стіни</spa>
+                  </td>
+                  <td class="page-table__price">
+                    від 1000 грн.
+                  </td>
+                </tr>
+                <tr class="page-table__firstrow">
+                  <td class="page-table__item">
+                    <span>Демонтаж віконних, дверних блоків</span>
+                  </td>
+                  <td class="page-table__price">
+                    від 10000 грн.
+                  </td>
+                  <td class="page-table__item">
+                    <span>Демонтаж цегляної стіни</spa>
+                  </td>
+                  <td class="page-table__price">
+                    від 10 грн.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pseduo-track"></div>
+        <div class="note mt-4 col-md-10">
+          Зверніть увагу, що компанія “ Локальний Ремонт» пропонує конкурентні та справедливі ціни на ремонт квартир
+          будь-якого рівня складності. Щоб зрозуміти, який ремонт потрібен саме вашому житлу, звертайтесь до наших
+          менеджерів або скористайтеся спеціально розробленим тестом на нашому сайті.
+        </div>
       </div>
     </div>
-    <div class="works-section__body outer-wrapper">
-      <div class="inner-wrapper">
+    <!-- table -->
+    </section>
+    <!-- Section works -->
+    </main>
 
-        <div class="item-works works-section__item item-works_master">
-          <h3 class="item-works__title title-secondary">
-            Виконроб
-          </h3>
-          <p>
-            Цей майстер безпосередньо керує всіма процесами в ремонті квартири, а також відповідає за якість та
-            дотримання термінів робіт. У тому числі виконроб контролює:
-            своєчасну доставку будівельних матеріалів, їх якість та витрату; дотримання будівельних норм та правил,
-            технологій та вимог безпеки; дотримання трудової дисципліни.
-          </p>
-          <p> Виконроб стежить за всіма етапами та процесами ремонту — від підготовчих робіт до прибирання квартири. Він
-            же веде звітність та взаємодіє із замовником з усіх поточних питань.</p>
-        </div>
-
-        <div class="item-works works-section__item item-works_bud">
-          <h3 class="item-works__title title-secondary">
-            Будівельники
-          </h3>
-          <p>
-            На плечі будівельників лягає левова частка найважчих і брудних робіт, таких як знесення та встановлення
-            перегородок, пристрій прорізів, цементне стягування підлоги, встановлення вікон, дверей і так далі.
-            Більшість із них — будівельники-універсали, які можуть виконувати й інші види ремонтних робіт.
-          </p>
-        </div>
-
-        <div class="item-works works-section__item item-works_paint">
-          <h3 class="item-works__title title-secondary">
-            Маляри-штукатури
-          </h3>
-          <p class="nogap">
-            Ці спеціалісти беруть участь у всіх чотирьох етапах ремонту квартири. До їхнього завдання входить:
-          </p>
-          <ul>
-            <li>очищення стін від шпалер, штукатурки та інших покриттів;</li>
-            <li>зняття лакофарбових покриттів;</li>
-            <li>наклеювання штукатурної сітки і нанесення штукатурного шару;</li>
-            <li>вирівнювання та шпаклювання поверхонь;</li>
-            <li>ґрунтівка, фарбування, поклейка шпалер та багато іншого.</li>
-          </ul>
-          <p class="accent">
-            Фахівці з ремонту квартир повинні не просто мати найвищий рівень майстерності, а й бути оснащені сучасними
-            приладами та інструментами. Таких майстрів, озброєних новітньою технікою та знаннями, ви знайдете у нашій
-            компанії.
-          </p>
-        </div>
-
-        <div class="item-works works-section__item item-works_tiles">
-          <h3 class="item-works__title title-secondary">
-            Плиточники-облицювальники
-          </h3>
-          <p class="nogap">
-            Для укладання кахлю потрібні «рівні руки» та відмінний окомір. Наші професіонали швидко та якісно виконують
-            наступний перелік робіт:
-          </p>
-          <ul>
-            <li>укладання плитки на стіни та підлогу;</li>
-            <li>монтаж керамічних плінтусів;</li>
-            <li>облицювання кахлем сходів, плінтусів, укосів та інших елементів;</li>
-            <li>укладання мозаїки та мозаїчної плитки;</li>
-            <li>облицювання декоративним каменем;</li>
-            <li>монтаж декоративного керамічного панно та багато іншого.</li>
-          </ul>
-        </div>
-
-        <div class="item-works works-section__item item-works_santech">
-          <h3 class="item-works__title title-secondary">
-            Сантехніки
-          </h3>
-          <p>
-            В їх обов’язки входить прокладання водопровідних та каналізаційних труб, заміна стояків, монтаж сантехнічних
-            приладів — ванн, душових кабін, раковин, унітазів, біде, — а також підключення водонагрівальних приладів.
-          </p>
-        </div>
-
-        <div class="item-works works-section__item item-works_energy">
-          <h3 class="item-works__title title-secondary">
-            Електрики
-          </h3>
-          <p>Ці майстри здійснюють монтаж електропроводки, теплої підлоги, встановлюють електричні лічильники,
-            розподільні коробки, розетки, вимикачі, освітлювальні прилади. Вони, поряд з виконробом, відповідають за
-            електробезпеку вашої квартири, тому кожен із наших фахівців-електриків має відповідну кваліфікацію.</p>
-          <p class="accent">За потреби ми залучаємо до ремонту квартир й інших наших фахівців — столярів, теслярів,
-            зварювальників, склярів, мулярів та дизайнерів інтер'єру. Виконаємо будь які роботи швидко та якісно. За
-            деталями звертайтеся до наших менеджерів.</p>
-        </div>
-
-      </div>
-    </div>
-    <div class="pseduo-track"></div>
-  </section>
-  <!-- Section works -->
-  </main>
-
-  <footer class="footer">
+    <footer class="footer">
   <div class="row">
     <div class="col-lg-5 order-last order-lg-first">
       <div class="footer__info">
@@ -924,8 +1255,7 @@
     </div>
   </div>
 </footer>
-  </div>
+    </div>
+  </body>
 
-</body>
-
-</html>
+  </html>
