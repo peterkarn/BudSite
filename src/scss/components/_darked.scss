@@ -7,6 +7,9 @@
   background-position: center center;
   background-size: cover;
   border-radius: 15px;
+  max-width: 1320px;
+  margin: 0 auto;
+  outline: 3px solid red;
 
   &__title {
     color: #F5FBF6;

@@ -12,11 +12,15 @@
   & input {
     border-radius: 15px;
     padding: 12px 17px;
-    color: #BEBEBE;
 
     &::placeholder {
       color: #BEBEBE;
     }
+  }
+
+  & p {
+    color: var(--primary);
+    @include adaptiv-value(margin-bottom, 25, 10, 1);
   }
 
   &__label {

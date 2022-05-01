@@ -253,3 +253,14 @@ section:first-child {
     border: 1px solid var(--lightgreen);
   }
 }
+
+.socials__item {
+  & img {
+    transition: .3s all ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+}

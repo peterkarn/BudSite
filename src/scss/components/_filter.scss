@@ -53,9 +53,6 @@
   }
 
   &__categories {
-    padding-bottom: 20px;
-    @include adaptiv-value(margin-bottom, 30, 15, 1);
-    overflow-x: scroll;
 
     &-inner {
       display: flex;
@@ -143,4 +140,8 @@
 
 
 
+}
+
+.hide {
+  display: none;
 }

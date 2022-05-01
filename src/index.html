@@ -9,408 +9,413 @@
     <main class="main">
 
       <!-- darked bock -->
-      <div class="container">
-        <section class="darked-block darked-form">
-          <div class="container">
-
-            <div class="row align-items-center justify-content-around">
-              <div class="col-lg-6 col-sm-12">
-                <div class="darked-block__info">
-                  <h1 class="darked-block__title darked-form__title">
-                    Локальний ремонт у вашому місті
-                  </h1>
-                  <p class="darked-block__text">
-                    Отримайте безкоштовну консультацію від наших спеціалістів
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-5 col-sm-12">
-                <form action="#" class="form">
-                  <label class="form__label">
-                    <span>Ваше ім’я*</span>
-                    <input type="text" class="form__input input-reset" placeholder=" Ім'я">
-                  </label>
-                  <label class="form__label">
-                    <span>Ваш телефон*</span>
-                    <input type="tel" class="form__input input-reset" placeholder="+380 (__) ___ __ __">
-                  </label>
-                  <label class="form__label">
-                    <span>Електрона адреса</span>
-                    <input type="email" class="form__input input-reset" placeholder=" Email">
-                  </label>
-                  <button class="btn form__btn btn-primary align-self-md-start">Замовити консультацію</button>
-                </form>
+      <section class="darked-block darked-form">
+        <div class="container">
+          <div class="row align-items-center justify-content-around">
+            <div class="col-lg-6 col-sm-12">
+              <div class="darked-block__info">
+                <h1 class="darked-block__title darked-form__title">
+                  Локальний ремонт у вашому місті
+                </h1>
+                <p class="darked-block__text">
+                  Отримайте безкоштовну консультацію від наших спеціалістів
+                </p>
               </div>
             </div>
+            <div class="col-lg-5 col-sm-12">
+              <form action="#" class="form">
+                <label class="form__label">
+                  <span>Ваше ім’я*</span>
+                  <input type="text" class="form__input input-reset" placeholder=" Ім'я">
+                </label>
+                <label class="form__label">
+                  <span>Ваш телефон*</span>
+                  <input type="tel" class="form__input input-reset" placeholder="+380 (__) ___ __ __">
+                </label>
+                <label class="form__label">
+                  <span>Електрона адреса</span>
+                  <input type="email" class="form__input input-reset" placeholder=" Email">
+                </label>
+                <button class="btn form__btn btn-primary align-self-md-start" type="submit"
+                  data-hystmodal="#formModal">Замовити
+                  консультацію
+                </button>
+              </form>
+            </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- darked bock -->
 
       <!-- categories block -->
-      <div class="container">
-        <section class="categories">
-          <div class="container">
-            <h1 class="section-title">
-              Категорії ремонтів
-            </h1>
-            <div class="filter">
+      <section class="categories">
+        <div class="container">
+          <h2 class="section-title">
+            Категорії ремонтів
+          </h2>
+          <div class="filter">
+            <div class="row">
+              <div class="filter__btns">
+                <button class="btn filter__btn btn-outline-secondary active" data-filter="dirty">Чорновіроботи</button>
+                <button class="btn filter__btn btn-outline-secondary" data-filter="clean">Чистові
+                  роботи</button>
+              </div>
+            </div>
+            <div class="tabs__content">
               <div class="row">
-                <div class="filter__btns">
-                  <button class="btn filter__btn btn-outline-secondary active"
-                    data-filter="dirty">Чорновіроботи</button>
-                  <button class="btn filter__btn btn-outline-secondary" data-filter="clean">Чистові
-                    роботи</button>
-                </div>
-              </div>
-              <div class="tabs__content">
-                <div class="row">
-                  <div class="filter__categories">
-                    <h3 class="filter__title">
-                      Сортування:
-                    </h3>
-                    <div class="filter__categories-inner">
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
+                <div class="outer-wrapper">
+                  <div class="inner-wrapper">
+                    <div class="filter__categories">
+                      <h3 class="filter__title">
+                        Сортування:
+                      </h3>
+                      <div class="filter__categories-inner">
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
 
-                      <button class="btn filter__category btn-outline-secondary" data-category="demontage">
-                        Демонтаж
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="else">
-                        Стіни
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="roof">
-                        Підлога
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="demontage">
-                        Демонтаж
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="else">
-                        Стіни
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="roof">
-                        Підлога
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter__works">
-                  <div class="outer-wrapper">
-                    <div class="inner-wrapper">
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img1.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img2.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img3.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img4.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img1.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty else" data-filter-resultcategory="else">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img2.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item clean roof" data-filter-resultcategory="roof">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img3.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img4.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="pseduo-track"></div>
                 </div>
+                <div class="pseduo-track"></div>
               </div>
-              <div class="tabs__content">
-                <div class="row">
-                  <div class="filter__categories">
-                    <h3 class="filter__title">
-                      Сортування:
-                    </h3>
-                    <div class="filter__categories-inner">
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
+              <div class="filter__works">
+                <div class="outer-wrapper">
+                  <div class="inner-wrapper">
+                    <div class="filter__column">
+                      <div class="filter__item dirty stelya" data-filter-resultcategory="demontage">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img1.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img2.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item dirty roof" data-filter-resultcategory="demontage">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img3.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img4.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item dirty stelya" data-filter-resultcategory="demontage">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img1.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item dirty else" data-filter-resultcategory="else">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img2.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item clean roof" data-filter-resultcategory="roof">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img3.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img4.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pseduo-track"></div>
+              </div>
+            </div>
+            <div class="tabs__content">
+              <div class="row">
+                <div class="outer-wrapper">
+                  <div class="inner-wrapper">
+                    <div class="filter__categories">
+                      <h3 class="filter__title">
+                        Сортування:
+                      </h3>
+                      <div class="filter__categories-inner">
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
 
-                      <button class="btn filter__category btn-outline-secondary" data-category="demontage">
-                        Демонтаж
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="else">
-                        Стіни
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="roof">
-                        Підлога
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="demontage">
-                        Демонтаж
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="else">
-                        Стіни
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="roof">
-                        Підлога
-                      </button>
-                      <button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
-                        Стеля
-                      </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="filter__works">
-                  <div class="outer-wrapper">
-                    <div class="inner-wrapper">
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img1.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img2.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img3.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img4.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img1.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item dirty else" data-filter-resultcategory="else">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img2.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item clean roof" data-filter-resultcategory="roof">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img3.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__column">
-                        <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
-                          <a href="#" class="filter__img ibg">
-                            <img src="img/filter-img4.jpg" alt="Work">
-                          </a>
-                          <div class="filter__item-content">
-                            <div class="filter__item-info">
-                              <p>
-                                Назва робіт
-                              </p>
-                            </div>
+                <div class="pseduo-track"></div>
+              </div>
+              <div class="filter__works">
+                <div class="outer-wrapper">
+                  <div class="inner-wrapper">
+                    <div class="filter__column">
+                      <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img1.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <div class="filter__column">
+                      <div class="filter__item dirty stelya" data-filter-resultcategory="demontage">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img2.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item dirty roof " data-filter-resultcategory="demontage">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img3.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item dirty else " data-filter-resultcategory="demontage">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img4.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img1.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item dirty else" data-filter-resultcategory="else">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img2.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item clean roof" data-filter-resultcategory="roof">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img3.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__column">
+                      <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
+                        <a href="#" class="filter__img ibg">
+                          <img src="img/filter-img4.jpg" alt="Work">
+                        </a>
+                        <div class="filter__item-content">
+                          <div class="filter__item-info">
+                            <p>
+                              Назва робіт
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="pseduo-track"></div>
                 </div>
+                <div class="pseduo-track"></div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- categories block -->
 
       <!-- darked bock -->
-      <div class="container">
-        <section class="darked-block darked-test">
-          <h1 class="darked-block__title">
-            Дізнайтесь який ремонт підійде саме вам
-          </h1>
-          <p class="darked-block__text">
-            Ніяк не можете визначитися з типом ремонту та послугами? Пройдіть швидкий тест, якій допоможе вирішити
-            це
-            питання
-          </p>
-          <a href="#" class="btn btn-primary">Перейти до тесту</a>
-        </section>
-      </div>
+      <section class="darked-block darked-test">
+        <h2 class="darked-block__title">
+          Дізнайтесь який ремонт підійде саме вам
+        </h2>
+        <p class="darked-block__text">
+          Ніяк не можете визначитися з типом ремонту та послугами? Пройдіть швидкий тест, якій допоможе вирішити
+          це
+          питання
+        </p>
+        <a href="#" class="btn btn-primary">Перейти до тесту</a>
+      </section>
       <!-- darked bock -->
 
       <section class="list-section">
@@ -968,9 +973,9 @@
           <div class="row">
             <div class="col-md-5">
               <div class="prices__info">
-                <h1 class="section-title">
+                <h2 class="section-title">
                   Середні ціни на ремонт по місту
-                </h1>
+                </h2>
                 <p>
                   Скільки приблизно може коштувати ремонт квартири в Хмельницькому? Якщо не враховувати вартість
                   будівельних та витратних матеріалів, то діапазон цін на ремонтні послуги можна представити так (за
@@ -1109,6 +1114,43 @@
         </div>
       </section>
       <!-- table -->
+
+      <!-- modal -->
+
+
+      <div class="hystmodal" id="myModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+          <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Закрыть</button>
+            <div class="form-modal">
+              <form action="#" class="form">
+                <p>
+                  Залиште заяву та наш менеджер зв’яжеться з вами у найближчий час щоб розповісти про усі необхідні
+                  деталі
+                </p>
+                <label class="form__label">
+                  <span>Ваше ім’я*</span>
+                  <input type="text" class="form__input input-reset" placeholder=" Ім'я">
+                </label>
+                <label class="form__label">
+                  <span>Ваш телефон*</span>
+                  <input type="tel" class="form__input input-reset" placeholder="+380 (__) ___ __ __">
+                </label>
+                <label class="form__label">
+                  <span>Електрона адреса</span>
+                  <input type="email" class="form__input input-reset" placeholder=" Email">
+                </label>
+                <button class="btn form__btn btn-primary align-self-md-start" type="submit">Замовити
+                  консультацію
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal -->
+
 
     </main>
   </div>
