@@ -155,3 +155,12 @@ document.addEventListener("DOMContentLoaded", () => {
     splide.on("updated", fillWithNumbers);
   }
 });
+
+// modal
+
+const formModal = new HystModal({
+  linkAttributeName: "data-hystmodal",
+  // настройки (не обязательно), см. API
+});
+
+console.log(formModal);

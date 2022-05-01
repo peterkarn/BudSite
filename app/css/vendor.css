@@ -9222,8 +9222,6 @@ progress {
 .hystmodal__close {
   position: absolute;
   z-index: 10;
-  top: 0;
-  right: -40px;
   display: block;
   width: 30px;
   height: 30px;

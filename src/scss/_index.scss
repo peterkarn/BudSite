@@ -144,11 +144,44 @@
   }
 }
 
+
+.modal .hystmodal__window {
+  width: 500px;
+  border-radius: 35px 0 35px 0px;
+}
+
+.modal .hystmodal__close {
+  right: 10px;
+  top: 10px;
+  background-image: url("../img/svg/close-btn.svg");
+  width: 20px;
+  height: 20px;
+  transition: .5s all ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+
 .form-modal {
   display: flex;
   flex-direction: column;
   padding: 55px 40px;
+  @include adaptiv-value(padding-top, 55, 30, 1);
+  @include adaptiv-value(padding-bottom, 55, 30, 1);
+  @include adaptiv-value(padding-right, 40, 25, 1);
+  @include adaptiv-value(padding-left, 40, 25, 1);
   background-color: var(--dark-accent);
   max-width: 510px;
   border-radius: 35px 0 35px 0px;
+
+  & .hystmodal__window {
+    width: 510px;
+    border-radius: 35px 0 35px 0;
+  }
+
+  & .hystmodal__close {
+    background-image: url("../img/svg/close-btn.svg");
+  }
 }

@@ -43,6 +43,7 @@
 }
 
 .darked-test {
+  margin-top: 90px;
   min-height: 390px;
   @include adaptiv-value(padding-top, 30, 15, 1);
   @include adaptiv-value(padding-bottom, 30, 15, 1);
