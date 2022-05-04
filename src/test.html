@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+
+    @include('partials/header.html')
+    <main class="main">
+      <div class="breadcrumb__list container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Головна</a>
+          </li>
+          <li class="breadcrumb-item breadcrumb-active">
+            <a href="test.html">Сторiнки тесту</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="result.html">Результат</a>
+          </li>
+        </ol>
+      </div>
+
+      <!-- darked bock -->
+      <section class="darked-block darked-help">
+        <h1 class="darked-block__title">
+          Ми допоможемо підібраті для вас необхідні ремонті послуги
+        </h1>
+        <p class="darked-block__text">
+          Тест складається з 10 питаннь та не забере багато вашого часу
+        </p>
+      </section>
+      <!-- darked bock -->
+
+      <section class="test">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="section-title">
+                1. Питання
+              </h2>
+              <p class="test__description">
+                Оберіть одну або декілька відовідей:
+              </p>
+              <div class="test__variants">
+                <div class="test__item">
+                  <button class="btn btn-secondary variant-btn">
+                    Варіант 1
+                  </button>
+                  <button class="btn btn-secondary variant-btn">
+                    Варіант 2
+                  </button>
+                </div>
+                <div class="test__item">
+                  <button class="btn btn-secondary variant-btn">
+                    Варіант 1
+                  </button>
+                  <button class="btn btn-secondary variant-btn">
+                    Варіант 2
+                  </button>
+                </div>
+                <div class="test__item">
+                  <button class="btn btn-secondary variant-btn">
+                    Варіант 1
+                  </button>
+                  <button class="btn btn-secondary btn-secondary variant-btn">
+                    Варіант 2
+                  </button>
+                </div>
+              </div>
+              <div class="test__pagination">
+                <button class="pagination-btn sometestbtn prev-btn" disabled></button>
+                <button class="pagination-btn pagination-active sometestbtn">
+                  1
+                </button>
+                <button class="pagination-btn sometestbtn">
+                  2
+                </button>
+                <button class="pagination-btn sometestbtn">
+                  3
+                </button>
+                <button class="pagination-btn sometestbtn">
+                  4
+                </button>
+                <button class="pagination-btn sometestbtn">
+                  5
+                </button>
+                <button class="pagination-btn sometestbtn">
+                  6
+                </button>
+                <button class="pagination-btn sometestbtn">
+                  7
+                </button>
+                <button class="pagination-btn sometestbtn">
+                  8
+                </button>
+                <button class="pagination-btn sometestbtn">
+                  9
+                </button>
+                <button class="pagination-btn sometestbtn">
+                  10
+                </button>
+                <button class="pagination-btn sometestbtn next-btn"></button>
+
+              </div>
+            </div>
+            <div class="col-lg-6 order-first order-lg-last pb-4 pb-lg-0">
+              <div class="test__img rounded-edges ibg">
+                <img src="img/index/info-5.jpg" alt="Photo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- faq -->
+
+      <section class="faq">
+        <div class="container">
+          <h2 class="section-title">
+            FAQ
+          </h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="accordion accordion-flush faq__accordion" id="accordionColumn">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="accordionItem1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="accordionItem1"
+                    data-bs-parent="#accordionColumn">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionColumn">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionColumn">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="accordion accordion-flush faq__accordion" id="accordionColumnTwo">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="accordionItem1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="accordionItem1"
+                    data-bs-parent="#accordionColumnTwo">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2"
+                    data-bs-parent="#accordionColumnTwo">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionColumnTwo">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- faq -->
+
+
+
+    </main>
+  </div>
+  @include('partials/footer.html')
+  </div>
+</body>

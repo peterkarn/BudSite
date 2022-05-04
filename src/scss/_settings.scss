@@ -107,13 +107,20 @@ section:first-child {
 
 // btns
 .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 15px;
+  min-width: 240px;
+  max-width: 280px;
 }
+
 
 .btn-primary {
   background-color: #91C7BE;
   border-color: #91C7BE;
   transition: 0.3s;
+  padding: 10px;
 
   &:hover {
     background-color: #91C7BE;
@@ -262,5 +269,18 @@ section:first-child {
       transform: scale(1.1);
     }
   }
+}
 
+.breadcrumb-active {
+  color: var(--lightgreen);
+}
+
+.breadcrumb a {
+  &:hover {
+    color: var(--lightgreen);
+  }
+}
+
+.breadcrumb__list {
+  @include adaptiv-value(margin-bottom, 70, 35, 1)
 }

@@ -11,11 +11,11 @@
     background: linear-gradient(0deg, rgba(41, 104, 100, 1) 45.5vw, rgba(53, 56, 54, 1) 60.5vw);
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 575px) {
     background: linear-gradient(0deg, rgba(41, 104, 100, 1) 45.5vw, rgba(53, 56, 54, 1) 95.5vw);
   }
 
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 474px) {
     background: linear-gradient(0deg, rgba(41, 104, 100, 1) 45.5vw, rgba(53, 56, 54, 1) 134.5vw);
   }
 
@@ -40,10 +40,15 @@
   &__info {
     display: flex;
     flex-direction: column;
+    max-width: 350px;
     // @include adaptiv-value(padding-right, 80, 30, 1);
     // @include adaptiv-value(padding-left, 80, 30, 1);
     // @include adaptiv-value(padding-top, 30, 25, 1);
     // @include adaptiv-value(padding-bottom, 30, 25, 1);
+  }
+
+  & p {
+    margin-bottom: 11px;
   }
 
   &__logo {

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+
+    @include('partials/header.html')
+    <main class="main">
+      <div class="breadcrumb__list container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Головна</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="test.html">Сторiнки тесту</a>
+          </li>
+          <li class="breadcrumb-item breadcrumb-active">
+            <a href="result.html">Результат</a>
+          </li>
+        </ol>
+      </div>
+
+      <!-- faq -->
+
+
+
+      <!-- darked bock -->
+      <section class="darked-block darked-help">
+        <h1 class="darked-block__title">
+          Ми допоможемо підібраті для вас необхідні ремонті послуги
+        </h1>
+        <p class="darked-block__text">
+          Тест складається з 10 питаннь та не забере багато вашого часу
+        </p>
+      </section>
+      <!-- darked bock -->
+
+      <!-- result -->
+
+      <section class="result">
+        <div class="container">
+          <h2 class="section-title">
+            За результатами тесту вам підійде наступний ремонт:
+          </h2>
+          <div class="row">
+            <div class="col-md-5 pb-5 pb-md-0">
+              <div class="result__item">
+                <h3 class="result__title">
+                  Комплексний ремонт
+                </h3>
+                <div class="result__info">
+                  <p class="nogap">
+                    Вартість: <strong>25000-50000</strong> грн
+                  </p>
+                  <p>Термін виконання: <strong>1-5</strong> місяців</p>
+                </div>
+                <a href="complex.html" class="result__btn btn btn-primary">
+                  Дізнатися точну вартість
+                </a>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="result__item">
+                <h3 class="result__title">
+                  Косметичний ремонт
+                </h3>
+                <div class="result__info">
+                  <p class="nogap">
+                    Вартість: <strong>25000-50000</strong> грн
+                  </p>
+                  <p>Термін виконання: <strong>1-5</strong> місяців</p>
+                </div>
+                <button class="result__btn btn  btn-primary align-self-md-start" type="submit"
+                  data-hystmodal="#formModal">Замовити
+                  консультацію
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- result -->
+
+
+      <!-- darked-block -->
+
+      <section class="darked-block darked-form darked-details">
+        <div class="container">
+          <div class="row align-items-center justify-content-around">
+            <div class="col-lg-6 col-sm-12">
+              <div class="darked-block__info">
+                <h2 class="darked-block__title darked-form__title">
+                  Дізнайтесь детальніше який ремонт вам підійде
+                </h2>
+                <p class="darked-block__text">
+                  Залиште заяву та наш менеджер зв’яжеться з вами у найближчий час щоб розповісти про усі необхідні
+                  деталі
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+              <form action="#" class="form">
+                <label class="form__label">
+                  <span>Ваше ім’я*</span>
+                  <input type="text" class="form__input input-reset" placeholder=" Ім'я">
+                </label>
+                <label class="form__label">
+                  <span>Ваш телефон*</span>
+                  <input type="tel" class="form__input input-reset" placeholder="+380 (__) ___ __ __">
+                </label>
+                <label class="form__label">
+                  <span>Електрона адреса</span>
+                  <input type="email" class="form__input input-reset" placeholder=" Email">
+                </label>
+                <button class="btn form__btn btn-primary align-self-md-start" type="submit"
+                  data-hystmodal="#formModal">Замовити
+                  консультацію
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- darked-block -->
+
+
+
+      <!-- text section  -->
+
+      <section class="text-section">
+        <div class="container">
+          <h2 class="section-title">
+            Терміни виконання ремонтів у Хмельницькому
+          </h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>Терміни виконання <strong>ремонтних робіт</strong>, головним чином, залежать від площі
+                квартири,
+                висоти стелі та виду ремонту. До того ж слід знати, що двокімнатна квартира буде
+                ремонтуватись
+                швидше, ніж однокімнатна (бо поки сохне одна кімната можна робити іншу). І цей факт також
+                перекладається на вартість ремонту.</p>
+            </div>
+            <div class="col-md-6">
+              <p>У середньому, косметичний ремонт квартири <strong>площею 40-70 м2</strong> здійснюється за
+                один
+                місяць, капітальний – за 2-2,5 місяці, а елітний або дизайнерський ремонт може зайняти від
+                70 до
+                100 днів. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- text section  -->
+
+
+
+
+
+      <!-- slider-section -->
+      <section class="slider-section">
+        <div class="container">
+          <h2 class="section-title">
+            Відгуки
+          </h2>
+          <div class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide review-card">
+                  <div class="review-card__img ibg">
+                    <img src="img/index/user.jpg" alt="Photo">
+                  </div>
+                  <div class="review-card__text">
+                    <h4 class="review-card__name">Катерина Петрова</h4>
+                    <div class="review-card__descr">
+                      <p>“Дякую “Локальному Ремонту” за якісно та оперативно виконану роботу! Хлопці молодці!”</p>
+                    </div>
+                    <span class="review-card__date">10.03.2022</span>
+                  </div>
+                </li>
+                <li class="splide__slide review-card">
+                  <div class="review-card__img ibg">
+                    <img src="img/index/user.jpg" alt="Photo">
+                  </div>
+                  <div class="review-card__text">
+                    <h4 class="review-card__name">Катерина Петрова</h4>
+                    <div class="review-card__descr">
+                      <p>“Дякую “Локальному Ремонту” за якісно та оперативно виконану роботу! Хлопці молодці!”</p>
+                    </div>
+                    <span class="review-card__date">10.03.2022</span>
+                  </div>
+                </li>
+                <li class="splide__slide review-card">
+                  <div class="review-card__img ibg">
+                    <img src="img/index/user.jpg" alt="Photo">
+                  </div>
+                  <div class="review-card__text">
+                    <h4 class="review-card__name">Катерина Петрова</h4>
+                    <div class="review-card__descr">
+                      <p>“Дякую “Локальному Ремонту” за якісно та оперативно виконану роботу! Хлопці молодці!”</p>
+                    </div>
+                    <span class="review-card__date">10.03.2022</span>
+                  </div>
+                </li>
+                <li class="splide__slide review-card">
+                  <div class="review-card__img ibg">
+                    <img src="img/index/user.jpg" alt="Photo">
+                  </div>
+                  <div class="review-card__text">
+                    <h4 class="review-card__name">Катерина Петрова</h4>
+                    <div class="review-card__descr">
+                      <p>“Дякую “Локальному Ремонту” за якісно та оперативно виконану роботу! Хлопці молодці!”</p>
+                    </div>
+                    <span class="review-card__date">10.03.2022</span>
+                  </div>
+                </li>
+                <li class="splide__slide review-card">
+                  <div class="review-card__img ibg">
+                    <img src="img/index/user.jpg" alt="Photo">
+                  </div>
+                  <div class="review-card__text">
+                    <h4 class="review-card__name">Катерина Петрова</h4>
+                    <div class="review-card__descr">
+                      <p>“Дякую “Локальному Ремонту” за якісно та оперативно виконану роботу! Хлопці молодці!”</p>
+                    </div>
+                    <span class="review-card__date">10.03.2022</span>
+                  </div>
+                </li>
+                <li class="splide__slide review-card">
+                  <div class="review-card__img ibg">
+                    <img src="img/index/user.jpg" alt="Photo">
+                  </div>
+                  <div class="review-card__text">
+                    <h4 class="review-card__name">Катерина Петрова</h4>
+                    <div class="review-card__descr">
+                      <p>“Дякую “Локальному Ремонту” за якісно та оперативно виконану роботу! Хлопці молодці!”</p>
+                    </div>
+                    <span class="review-card__date">10.03.2022</span>
+                  </div>
+                </li>
+                <li class="splide__slide review-card">
+                  <div class="review-card__img ibg">
+                    <img src="img/index/user.jpg" alt="Photo">
+                  </div>
+                  <div class="review-card__text">
+                    <h4 class="review-card__name">Катерина Петрова</h4>
+                    <div class="review-card__descr">
+                      <p>“Дякую “Локальному Ремонту” за якісно та оперативно виконану роботу! Хлопці молодці!”</p>
+                    </div>
+                    <span class="review-card__date">10.03.2022</span>
+                  </div>
+                </li>
+                <li class="splide__slide review-card">
+                  <div class="review-card__img ibg">
+                    <img src="img/index/user.jpg" alt="Photo">
+                  </div>
+                  <div class="review-card__text">
+                    <h4 class="review-card__name">Катерина Петрова</h4>
+                    <div class="review-card__descr">
+                      <p>“Дякую “Локальному Ремонту” за якісно та оперативно виконану роботу! Хлопці молодці!”</p>
+                    </div>
+                    <span class="review-card__date">10.03.2022</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- slider-section -->
+
+
+
+      <section class="faq">
+        <div class="container">
+          <h2 class="section-title">
+            FAQ
+          </h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="accordion accordion-flush faq__accordion" id="accordionColumn">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="accordionItem1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="accordionItem1"
+                    data-bs-parent="#accordionColumn">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionColumn">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionColumn">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="accordion accordion-flush faq__accordion" id="accordionColumnTwo">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="accordionItem1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="accordionItem1"
+                    data-bs-parent="#accordionColumnTwo">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2"
+                    data-bs-parent="#accordionColumnTwo">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree">
+                      Чому нам можна довіряти?
+                    </button>
+                  </h2>
+                  <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionColumnTwo">
+                    <div class="accordion-body">
+                      До такої важливої ​​роботи допускаються лише майстри, які мають відповідну кваліфікацію, і
+                      саме
+                      таких спеціалістів надає для ремонту квартир у Хмельницькому “Локальний Ремонт”.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- faq -->
+
+
+      <!-- modal -->
+      <div class="modal">
+        <div class="hystmodal" id="formModal" aria-hidden="true">
+          <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+              <button data-hystclose class="hystmodal__close">Закрыть</button>
+              <div class="form-modal">
+                <form action="#" class="form">
+                  <p>
+                    Залиште заяву та наш менеджер зв’яжеться з вами у найближчий час щоб розповісти про усі
+                    необхідні
+                    деталі
+                  </p>
+                  <label class="form__label">
+                    <span>Ваше ім’я*</span>
+                    <input type="text" class="form__input input-reset" placeholder=" Ім'я">
+                  </label>
+                  <label class="form__label">
+                    <span>Ваш телефон*</span>
+                    <input type="tel" class="form__input input-reset" placeholder="+380 (__) ___ __ __">
+                  </label>
+                  <label class="form__label">
+                    <span>Електрона адреса</span>
+                    <input type="email" class="form__input input-reset" placeholder=" Email">
+                  </label>
+                  <button class="btn form__btn btn-primary align-self-md-start" type="submit">Замовити
+                    консультацію
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+
+
+
+    </main>
+  </div>
+  @include('partials/footer.html')
+  </div>
+</body>

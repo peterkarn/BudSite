@@ -16,72 +16,76 @@ const filterItem = document.querySelectorAll(".filter__item");
 const filterBtns = document.querySelector(".filter__btns");
 const filterCategories = document.querySelector(".filter__categories");
 
-filterCategories.addEventListener("click", (event) => {
-  if (event.target.tagName !== "BUTTON") {
-    return false;
-  }
-
-  let filterCategory = event.target.dataset.category;
-  filterItem.forEach((element) => {
-    if (!element.classList.contains(filterCategory)) {
-      element.classList.add("hide");
-    } else {
-      element.classList.remove("hide");
+if (filterCategories) {
+  filterCategories.addEventListener("click", (event) => {
+    if (event.target.tagName !== "BUTTON") {
+      return false;
     }
+
+    let filterCategory = event.target.dataset.category;
+    filterItem.forEach((element) => {
+      if (!element.classList.contains(filterCategory)) {
+        element.classList.add("hide");
+      } else {
+        element.classList.remove("hide");
+      }
+    });
   });
-});
+}
 
 const tabsBtn = document.querySelectorAll(".filter__btn");
 const tabsParent = document.querySelectorAll(".filter");
 const tabsContent = document.querySelectorAll(".tabs__content");
 
-function hideTabsContent() {
-  tabsContent.forEach((e) => {
-    e.classList.remove("show");
-    e.classList.add("hide");
-  });
+if (document.querySelector(".filter")) {
+  function hideTabsContent() {
+    tabsContent.forEach((e) => {
+      e.classList.remove("show");
+      e.classList.add("hide");
+    });
 
-  tabsBtn.forEach((btn) => {
-    btn.classList.remove("active");
+    tabsBtn.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+  }
+
+  function showTabsContent(i) {
+    tabsContent[i].classList.remove("hide");
+    tabsContent[i].classList.add("show");
+
+    tabsBtn[i].classList.add("active");
+  }
+
+  hideTabsContent();
+  showTabsContent(0);
+
+  // tabsParent.addEventListener("click", (e) => {
+  //   const target = e.target;
+
+  //   if (target && target.classList.contains("filter__btn")) {
+  //     tabsBtn.forEach((e, i) => {
+  //       if (target == e) {
+  //         hideTabsContent();
+  //         showTabsContent(i);
+  //       }
+  //     });
+  //   }
+  // });
+
+  tabsParent.forEach((parent) => {
+    parent.addEventListener("click", (e) => {
+      const target = e.target;
+      if (target && target.classList.contains("filter__btn")) {
+        tabsBtn.forEach((e, i) => {
+          if (target == e) {
+            hideTabsContent();
+            showTabsContent(i);
+          }
+        });
+      }
+    });
   });
 }
-
-function showTabsContent(i) {
-  tabsContent[i].classList.remove("hide");
-  tabsContent[i].classList.add("show");
-
-  tabsBtn[i].classList.add("active");
-}
-
-hideTabsContent();
-showTabsContent(0);
-
-// tabsParent.addEventListener("click", (e) => {
-//   const target = e.target;
-
-//   if (target && target.classList.contains("filter__btn")) {
-//     tabsBtn.forEach((e, i) => {
-//       if (target == e) {
-//         hideTabsContent();
-//         showTabsContent(i);
-//       }
-//     });
-//   }
-// });
-
-tabsParent.forEach((parent) => {
-  parent.addEventListener("click", (e) => {
-    const target = e.target;
-    if (target && target.classList.contains("filter__btn")) {
-      tabsBtn.forEach((e, i) => {
-        if (target == e) {
-          hideTabsContent();
-          showTabsContent(i);
-        }
-      });
-    }
-  });
-});
 
 // splide
 

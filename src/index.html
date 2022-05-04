@@ -7,9 +7,18 @@
 
     @include('partials/header.html')
     <main class="main">
-
+      <div class="breadcrumb__list container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item breadcrumb-active">
+            <a href="index.html">Головна</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="test.html">Сторiнки тесту</a>
+          </li>
+        </ol>
+      </div>
       <!-- darked bock -->
-      <section class="darked-block darked-form">
+      <section class="darked-block darked-form darked-consultation">
         <div class="container">
           <div class="row align-items-center justify-content-around">
             <div class="col-lg-6 col-sm-12">
@@ -56,13 +65,13 @@
           <div class="filter">
             <div class="row">
               <div class="filter__btns">
-                <button class="btn filter__btn btn-outline-secondary active" data-filter="dirty">Чорновіроботи</button>
-                <button class="btn filter__btn btn-outline-secondary" data-filter="clean">Чистові
+                <button class="btn filter__btn btn-secondary active" data-filter="dirty">Чорновіроботи</button>
+                <button class="btn filter__btn btn-secondary" data-filter="clean">Чистові
                   роботи</button>
               </div>
             </div>
             <div class="tabs__content">
-              <div class="row">
+              <div class="row g-0 pb-4">
                 <div class="outer-wrapper">
                   <div class="inner-wrapper">
                     <div class="filter__categories">
@@ -113,115 +122,99 @@
               <div class="filter__works">
                 <div class="outer-wrapper">
                   <div class="inner-wrapper">
-                    <div class="filter__column">
-                      <div class="filter__item dirty stelya" data-filter-resultcategory="demontage">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img1.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty stelya" data-filter-resultcategory="demontage">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img2.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content" style="background-color: #7AA1AA;">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img2.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img2.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content" style="background-color: #AAA87A;">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item dirty roof" data-filter-resultcategory="demontage">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img3.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty roof" data-filter-resultcategory="demontage">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img3.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content" style="background-color: #7A8AAA;">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img4.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img4.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content" style="background-color: #98C9C1">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item dirty stelya" data-filter-resultcategory="demontage">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img1.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty stelya" data-filter-resultcategory="demontage">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img1.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content" style="background-color: #7AA1AA">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item dirty else" data-filter-resultcategory="else">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img2.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty else" data-filter-resultcategory="else">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img2.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content" style="background-color: #AAA87A">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item clean roof" data-filter-resultcategory="roof">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img3.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item clean roof" data-filter-resultcategory="roof">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img3.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img4.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img4.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -231,7 +224,7 @@
               </div>
             </div>
             <div class="tabs__content">
-              <div class="row">
+              <div class="row g-0 pb-4">
                 <div class="outer-wrapper">
                   <div class="inner-wrapper">
                     <div class="filter__categories">
@@ -282,115 +275,99 @@
               <div class="filter__works">
                 <div class="outer-wrapper">
                   <div class="inner-wrapper">
-                    <div class="filter__column">
-                      <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img1.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty stelya" data-filter-resultcategory="demontage">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img1.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item dirty stelya" data-filter-resultcategory="demontage">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img2.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img2.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item dirty roof " data-filter-resultcategory="demontage">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img3.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty roof" data-filter-resultcategory="demontage">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img3.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item dirty else " data-filter-resultcategory="demontage">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img4.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img4.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item dirty demontage " data-filter-resultcategory="demontage">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img1.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty stelya" data-filter-resultcategory="demontage">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img1.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item dirty else" data-filter-resultcategory="else">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img2.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item dirty else" data-filter-resultcategory="else">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img2.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item clean roof" data-filter-resultcategory="roof">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img3.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item clean roof" data-filter-resultcategory="roof">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img3.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__column">
-                      <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
-                        <a href="#" class="filter__img ibg">
-                          <img src="img/filter-img4.jpg" alt="Work">
-                        </a>
-                        <div class="filter__item-content">
-                          <div class="filter__item-info">
-                            <p>
-                              Назва робіт
-                            </p>
-                          </div>
+                    <div class="filter__item clean stelya" data-filter-resultcategory="stelya">
+                      <a href="#" class="filter__img ibg">
+                        <img src="img/filter-img4.jpg" alt="Work">
+                      </a>
+                      <div class="filter__item-content">
+                        <div class="filter__item-info">
+                          <p>
+                            Назва робіт
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -658,7 +635,7 @@
 
           </div>
         </div>
-        <div class="pseduo-track"></div>
+        <div class="pseduo-track  works-pseudo-track"></div>
       </section>
       <!-- Section works -->
 
@@ -1001,113 +978,452 @@
               </div>
             </div>
           </div>
-          <div class="page-table mt-4">
-            <div class="container">
-              <div class="outer-wrapper">
-                <div class="inner-wrapper">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th class="w-40">Ремонт квартир</th>
-                        <th class="w-10">Ціна, грн /м2</th>
-                        <th class="w-40"></th>
-                        <th class="w-10">Ціна, грн /м2</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="page-table__firstrow">
-                        <td class="page-table__item">
-                          <span>Зняття старих шпалер </span>
-                        </td>
-                        <td class="page-table__price">
-                          від 10 грн.
-                        </td>
-                        <td class="page-table__item">
-                          <span>Демонтаж цегляної стіни</spa>
-                        </td>
-                        <td class="page-table__price">
-                          від 10 грн.
-                        </td>
-                      </tr>
-                      <tr class="page-table__firstrow">
-                        <td class="page-table__item">
-                          <span>Зняття старих шпалер </span>
-                        </td>
-                        <td class="page-table__price">
-                          від 10 грн.
-                        </td>
-                        <td class="page-table__item">
-                          <span>Демонтаж цегляної стіни</spa>
-                        </td>
-                        <td class="page-table__price">
-                          від 10 грн.
-                        </td>
-                      </tr>
-                      <tr class="page-table__firstrow">
-                        <td class="page-table__item">
-                          <span>Зняття старих шпалер </span>
-                        </td>
-                        <td class="page-table__price">
-                          від 10 грн.
-                        </td>
-                        <td class="page-table__item">
-                          <span>Демонтаж цегляної стіни</spa>
-                        </td>
-                        <td class="page-table__price">
-                          від 10 грн.
-                        </td>
-                      </tr>
-                      <tr class="page-table__firstrow">
-                        <td class="page-table__item">
-                          <span>Демонтаж стяжки</span>
-                        </td>
-                        <td class="page-table__price">
-                          від 10 грн.
-                        </td>
-                        <td class="page-table__item">
-                          <span>Демонтаж цегляної стіни</spa>
-                        </td>
-                        <td class="page-table__price">
-                          від 10 грн.
-                        </td>
-                      </tr>
-                      <tr class="page-table__firstrow">
-                        <td class="page-table__item">
-                          <span>Зняття старих шпалер </span>
-                        </td>
-                        <td class="page-table__price">
-                          від 10 грн.
-                        </td>
-                        <td class="page-table__item">
-                          <span>Демонтаж цегляної стіни</spa>
-                        </td>
-                        <td class="page-table__price">
-                          від 1000 грн.
-                        </td>
-                      </tr>
-                      <tr class="page-table__firstrow">
-                        <td class="page-table__item">
-                          <span>Демонтаж віконних, дверних блоків</span>
-                        </td>
-                        <td class="page-table__price">
-                          від 10000 грн.
-                        </td>
-                        <td class="page-table__item">
-                          <span>Демонтаж цегляної стіни</spa>
-                        </td>
-                        <td class="page-table__price">
-                          від 10 грн.
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+          <div class="filter">
+            <div class="row">
+              <div class="filter__btns">
+                <button class="btn filter__btn btn-secondary active" data-filter="dirty">Чорновіроботи</button>
+                <button class="btn filter__btn btn-secondary" data-filter="clean">Чистові
+                  роботи</button>
+              </div>
+            </div>
+            <div class="tabs__content">
+              <div class="row g-0 pb-4">
+                <div class="outer-wrapper">
+                  <div class="inner-wrapper">
+                    <div class="filter__categories">
+                      <h3 class="filter__title">
+                        Сортування:
+                      </h3>
+                      <div class="filter__categories-inner">
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pseduo-track"></div>
+              </div>
+              <div class="page-table mt-4">
+                <div class="container">
+                  <div class="outer-wrapper">
+                    <div class="inner-wrapper">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th class="w-40">Ремонт квартир</th>
+                            <th class="w-10">Ціна, грн /м2</th>
+                            <th class="w-40"></th>
+                            <th class="w-10">Ціна, грн /м2</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Зняття старих шпалер </span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Зняття старих шпалер </span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Зняття старих шпалер </span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж стяжки</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж стяжки</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж стяжки</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж стяжки</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж стяжки</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Зняття старих шпалер </span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 1000 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж віконних, дверних блоків</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10000 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="pseduo-track"></div>
+                  <div class="note mt-4 col-md-10">
+                    Зверніть увагу, що компанія “ Локальний Ремонт” пропонує конкурентні та
+                    справедливі ціни на ремонт
+                    квартир будь-якого рівня складності. Щоб зрозуміти, який ремонт потрібен саме
+                    вашому житлу, звертайтесь
+                    до наших менеджерів або скористайтеся спеціально розробленим тестом на нашому
+                    сайті.
+                  </div>
                 </div>
               </div>
-              <div class="pseduo-track"></div>
-              <div class="note mt-4 col-md-10">
-                Зверніть увагу, що компанія “ Локальний Ремонт” пропонує конкурентні та справедливі ціни на ремонт
-                квартир будь-якого рівня складності. Щоб зрозуміти, який ремонт потрібен саме вашому житлу, звертайтесь
-                до наших менеджерів або скористайтеся спеціально розробленим тестом на нашому сайті.
+            </div>
+            <div class="tabs__content">
+              <div class="row g-0 pb-4">
+                <div class="outer-wrapper">
+                  <div class="inner-wrapper">
+                    <div class="filter__categories">
+                      <h3 class="filter__title">
+                        Сортування:
+                      </h3>
+                      <div class="filter__categories-inner">
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="demontage">
+                          Демонтаж
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="else">
+                          Стіни
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="roof">
+                          Підлога
+                        </button>
+                        <button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button><button class="btn filter__category btn-outline-secondary" data-category="stelya">
+                          Стеля
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pseduo-track"></div>
+              </div>
+              <div class="page-table mt-4">
+                <div class="container">
+                  <div class="outer-wrapper">
+                    <div class="inner-wrapper">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th class="w-40">Ремонт квартир</th>
+                            <th class="w-10">Ціна, грн /м2</th>
+                            <th class="w-40"></th>
+                            <th class="w-10">Ціна, грн /м2</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Зняття старих шпалер </span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Зняття старих шпалер </span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Зняття старих шпалер </span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж стяжки</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж стяжки</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж стяжки</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж стяжки</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж стяжки</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Зняття старих шпалер </span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 1000 грн.
+                            </td>
+                          </tr>
+                          <tr class="page-table__firstrow">
+                            <td class="page-table__item">
+                              <span>Демонтаж віконних, дверних блоків</span>
+                            </td>
+                            <td class="page-table__price">
+                              від 10000 грн.
+                            </td>
+                            <td class="page-table__item">
+                              <span>Демонтаж цегляної стіни</spa>
+                            </td>
+                            <td class="page-table__price">
+                              від 10 грн.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="pseduo-track"></div>
+                  <div class="note mt-4 col-md-10">
+                    Зверніть увагу, що компанія “ Локальний Ремонт” пропонує конкурентні та
+                    справедливі ціни на ремонт
+                    квартир будь-якого рівня складності. Щоб зрозуміти, який ремонт потрібен саме
+                    вашому житлу, звертайтесь
+                    до наших менеджерів або скористайтеся спеціально розробленим тестом на нашому
+                    сайті.
+                  </div>
+                </div>
               </div>
             </div>
           </div>

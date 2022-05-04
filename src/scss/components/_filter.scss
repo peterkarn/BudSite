@@ -1,59 +1,33 @@
 .filter {
 
-  &__column {
-    flex: 0 0 240px;
-
-    &:not(:last-child) {
-      margin-right: 25px;
-    }
-  }
-
   &__btns {
     display: flex;
     flex-wrap: wrap;
     @include adaptiv-value(margin-bottom, 30, 15, 1);
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 575px) {
       flex-direction: column;
     }
   }
 
   &__btn {
-    min-width: 165px;
-    max-width: 200px;
-    padding: 5px;
-    border-radius: 5px;
 
     &:not(:last-child) {
       margin-right: 10px;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         margin-right: unset;
         margin-bottom: 15px;
       }
     }
 
-    &.active {
-      background-color: var(--deepblue);
-      color: var(--primary);
-      border: 2px solid var(--deepblue-border);
-
-    }
-
-    &:hover {
-      background-color: var(--deepblue);
-      color: var(--primary);
-      border: 2px solid var(--deepblue-border);
-    }
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       width: 100%;
       max-width: unset;
     }
   }
 
   &__categories {
-
     &-inner {
       display: flex;
     }
@@ -104,13 +78,17 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    // max-width: 240px; ????
+    flex: 0 0 240px;
     border-radius: 10px;
-    height: 100%;
     background-color: var(--lightgreen);
 
     &-content {
-      padding: 20px 30px;
+      @include adaptiv-value(padding-top, 30, 15, 1);
+      @include adaptiv-value(padding-bottom, 30, 15, 1);
+      @include adaptiv-value(padding-right, 20, 10, 1);
+      @include adaptiv-value(padding-left, 20, 10, 1);
+
+      height: 100%;
     }
 
     &-info {
@@ -119,6 +97,10 @@
         font-weight: 700;
         color: var(--primary);
       }
+    }
+
+    &:not(:last-child) {
+      margin-right: 25px;
     }
   }
 
@@ -141,6 +123,7 @@
 
 
 }
+
 
 .hide {
   display: none;

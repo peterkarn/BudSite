@@ -6,7 +6,7 @@
 @import "settings";
 @import "form";
 @import "index";
-
+@import "result";
 
 // подключения компонентов страницы
 @import "./components/header";
@@ -17,3 +17,5 @@
 @import "./components/customscroll";
 @import "./components/slider";
 @import "./components/table";
+@import "./components/test";
+@import "./components/complex";

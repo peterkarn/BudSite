@@ -9,11 +9,35 @@
   border-radius: 15px;
   max-width: 1320px;
   margin: 0 auto;
-  outline: 3px solid red;
+
+  @media screen and (max-width: 1399px) {
+    max-width: 1140px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 960px;
+  }
+
+  @media screen and (max-width: 991px) {
+    max-width: 720px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 540px;
+  }
+
+  // @media screen and (max-width: 767px) {
+  //   max-width: 720px;
+  // }
+
+  @media screen and (max-width: 575px) {
+    max-width: 520px;
+  }
+
 
   &__title {
     color: #F5FBF6;
-    @include adaptiv-value(font-size, 45, 25, 1);
+    @include adaptiv-value(font-size, 45, 22, 1);
     line-height: 110%;
     font-weight: 700;
   }
@@ -24,7 +48,7 @@
 
   &__text {
     color: #F5FBF6;
-    @include adaptiv-value(font-size, 16, 14, 1);
+    @include adaptiv-value(font-size, 16, 13, 1);
     // max-width: 284px;
   }
 }
@@ -34,8 +58,6 @@
   @include adaptiv-value(padding-bottom, 64, 30, 1);
   @include adaptiv-value(padding-right, 30, 10, 1);
   @include adaptiv-value(padding-left, 30, 10, 1);
-
-  background-image: url("../../img/darked-bg.jpg");
 
   &__title {
     @include adaptiv-value(margin-bottom, 30, 15, 1)
@@ -56,9 +78,46 @@
     max-width: 465px;
   }
 
-  .darked-block__title {
+  & .darked-block__title {
     text-align: center;
     max-width: 550px;
     @include adaptiv-value(margin-bottom, 30, 15, 1)
   }
+}
+
+.darked-help {
+  min-height: 450px;
+  @include adaptiv-value(padding-top, 30, 15, 1);
+  @include adaptiv-value(padding-bottom, 30, 15, 1);
+  @include adaptiv-value(padding-right, 30, 20, 1);
+  @include adaptiv-value(padding-left, 30, 20, 1);
+  background-image: url("../../img/darked-bg3.jpg");
+
+  @media screen and (max-width: 991px) {
+    min-height: 300px;
+  }
+
+  & .darked-block__text {
+    text-align: center;
+    max-width: 336px;
+  }
+
+  & .darked-block__title {
+    text-align: center;
+    max-width: 666px;
+    @include adaptiv-value(margin-bottom, 30, 15, 1)
+  }
+}
+
+.darked-details {
+  margin-top: 90px;
+  background-image: url("../../img/darked-bg4.jpg");
+
+  & .darked-form__title {
+    max-width: 420px;
+  }
+}
+
+.darked-consultation {
+  background-image: url("../../img/darked-bg.jpg");
 }
